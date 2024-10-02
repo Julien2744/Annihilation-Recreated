@@ -1,0 +1,7 @@
+{
+	"replace": false,
+	"values": [
+		"annihilation:tick",
+		"animated_java:tick"
+	]
+}
