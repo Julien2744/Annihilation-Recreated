@@ -58,4 +58,4 @@ The boss can change target (player or mob) as long as it doesn't have the tag: `
 
 You can manually change target using `/execute as <entity> run function annihilation:set_target`
 
-Or `tag <entity> add anni_target`, but make sure that there only 1 target
+Or `/tag <entity> add anni_target`, but make sure that there only 1 target
