@@ -1,0 +1,1 @@
+tag @s remove aj.annihilation_recreated.animation.cauterize_them_all

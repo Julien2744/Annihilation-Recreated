@@ -1,0 +1,1 @@
+function animated_java:annihilation_recreated/zzzzzzzz/animations/cauterize_them_all/tick_animation
