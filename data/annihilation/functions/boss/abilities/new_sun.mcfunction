@@ -5,7 +5,7 @@ playsound minecraft:entity.blaze.shoot hostile @a[distance=..128] ~ ~ ~ 10 0
 playsound minecraft:block.respawn_anchor.set_spawn hostile @a[distance=..128] ~ ~ ~ 10
 
 #new sun
-summon magma_cube ~ ~ ~ {Glowing:1b,NoGravity:1b,Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,Health:40f,Size:1,Tags:["anni_immune","new_sun_hitbox"],ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:40}]}
+summon magma_cube ~ ~ ~ {Glowing:0b,NoGravity:1b,Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,Health:40f,Size:1,Tags:["anni_immune","new_sun_hitbox"],ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:40}]}
 summon item_display ~ ~ ~ {width:1f,height:1f,Tags:["anni_immune","new_sun"],brightness:{sky:15,block:15},start_interpolation:0,interpolation_duration:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:shroomlight",Count:1b}}
 
 scoreboard players add @e[type=item_display,limit=1,tag=new_sun,tag=anni_immune,distance=..16] anniR_newsun_comp 0
