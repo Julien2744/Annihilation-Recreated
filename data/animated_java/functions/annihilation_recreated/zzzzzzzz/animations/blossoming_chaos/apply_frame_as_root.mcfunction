@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..50 run function animated_java:annihilation_recreated/zzzzzzzz/animations/blossoming_chaos/tree/branch_0_50

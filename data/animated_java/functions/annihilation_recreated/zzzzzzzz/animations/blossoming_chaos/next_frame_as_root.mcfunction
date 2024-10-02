@@ -1,0 +1,1 @@
+function animated_java:annihilation_recreated/zzzzzzzz/animations/blossoming_chaos/tick_animation
