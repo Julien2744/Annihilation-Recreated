@@ -1,0 +1,22 @@
+{
+    "pools": [
+      {
+        "rolls": 27,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_block",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 30,
+                  "max": 64
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

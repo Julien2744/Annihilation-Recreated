@@ -1,0 +1,2 @@
+execute if entity @e[type=enderman,tag=anni_immune,nbt={NoAI:1b},limit=1,distance=..3,sort=nearest] run execute as @e[type=magma_cube,nbt={NoAI:1b,Size:16},distance=..90,limit=1,sort=nearest] run execute unless entity @s[nbt={ActiveEffects:[{Id:10}]}] run effect give @s regeneration 2 2 true
+execute unless entity @e[type=enderman,tag=anni_immune,nbt={NoAI:1b},limit=1,distance=..3,sort=nearest] run kill @s

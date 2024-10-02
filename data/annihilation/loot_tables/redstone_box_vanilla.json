@@ -1,0 +1,47 @@
+{
+    "pools": [
+      {
+        "rolls": {
+          "min": 19,
+          "max": 26
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:redstone",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 30,
+                  "max": 62
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 8,
+          "max": 18
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:redstone_block",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 6,
+                  "max": 12
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}  
