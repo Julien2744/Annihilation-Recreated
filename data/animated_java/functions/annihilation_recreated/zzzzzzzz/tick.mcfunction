@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.annihilation_recreated.root] run function animated_java:annihilation_recreated/zzzzzzzz/tick_as_root
