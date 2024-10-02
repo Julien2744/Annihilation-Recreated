@@ -1,4 +1,4 @@
-#scoreboard players add @s anniR_new_sun 1
+scoreboard players add @s anniR_new_sun 1
 
 playsound minecraft:entity.ravager.roar hostile @a[distance=..128] ~ ~ ~ 10
 playsound minecraft:entity.blaze.shoot hostile @a[distance=..128] ~ ~ ~ 10 0
