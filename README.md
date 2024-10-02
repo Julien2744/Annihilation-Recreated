@@ -5,7 +5,7 @@
 ### Minecraft datapack that aim to recreate the boss [Annihilation](https://wynncraft.wiki.gg/wiki/Annihilation) from the [Wynncraft server](https://wynncraft.com/)
 
 > [!WARNING]
-> This datapack is a **fan project**, all credits goes to the Wynncraft team
+> This datapack is a **fan project**, all credits goes to the **Wynncraft team**
 >
 > I only recreate the boss model/texture and attacks, the [music](https://www.youtube.com/watch?v=QiTEljrS05I) and the [structure](https://wynncraft.wiki.gg/wiki/Corruption_Portal) were directly taken from **Wynncraft**
 
