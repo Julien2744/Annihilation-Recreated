@@ -1,0 +1,1 @@
+function animated_java:annir_head/zzzzzzzz/animations/cleasing_inferno/tick_animation

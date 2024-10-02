@@ -1,0 +1,1 @@
+function animated_java:annir_head/zzzzzzzz/animations/cleasing_inferno/pause_as_root

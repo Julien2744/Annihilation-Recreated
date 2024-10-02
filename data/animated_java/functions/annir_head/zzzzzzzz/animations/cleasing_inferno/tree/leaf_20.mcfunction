@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:annir_head/zzzzzzzz/animations/cleasing_inferno/tree/leaf_20_as_bone
+execute unless entity @s[tag=aj.annir_head.disable_command_keyframes] at @s run function annihilation:boss/abilities/cleasing_inferno/shoot
