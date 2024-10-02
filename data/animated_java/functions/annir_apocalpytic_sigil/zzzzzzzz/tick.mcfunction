@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.annir_apocalpytic_sigil.root] run function animated_java:annir_apocalpytic_sigil/zzzzzzzz/tick_as_root

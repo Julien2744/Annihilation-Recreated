@@ -1,0 +1,2 @@
+function animated_java:annir_apocalpytic_sigil/zzzzzzzz/animations/turn/pause_as_root
+function animated_java:annir_apocalpytic_sigil/zzzzzzzz/animations/attack/pause_as_root

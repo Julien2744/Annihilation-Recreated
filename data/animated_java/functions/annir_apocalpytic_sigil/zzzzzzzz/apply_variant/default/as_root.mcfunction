@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:annir_apocalpytic_sigil/zzzzzzzz/apply_variant/default/as_bone

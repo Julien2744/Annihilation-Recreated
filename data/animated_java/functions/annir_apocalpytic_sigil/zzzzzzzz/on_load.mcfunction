@@ -1,0 +1,2 @@
+scoreboard players set @s aj.annir_apocalpytic_sigil.rig_loaded 1
+execute unless score @s aj.annir_apocalpytic_sigil.export_version = aj.annir_apocalpytic_sigil.export_version aj.i at @s run function animated_java:annir_apocalpytic_sigil/zzzzzzzz/mark_outdated_rig

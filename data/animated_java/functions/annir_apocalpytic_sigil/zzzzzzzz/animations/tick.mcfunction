@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.annir_apocalpytic_sigil.animation.turn] run function animated_java:annir_apocalpytic_sigil/zzzzzzzz/animations/turn/tick
+execute if entity @s[tag=aj.annir_apocalpytic_sigil.animation.attack] run function animated_java:annir_apocalpytic_sigil/zzzzzzzz/animations/attack/tick
