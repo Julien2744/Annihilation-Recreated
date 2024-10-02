@@ -1,0 +1,3 @@
+execute if score @s aj.anim_time matches 29 run function animated_java:annihilation_recreated/zzzzzzzz/animations/apocalpytic_sigil/tree/leaf_29
+execute if score @s aj.anim_time matches 30 run function animated_java:annihilation_recreated/zzzzzzzz/animations/apocalpytic_sigil/tree/leaf_30
+execute if score @s aj.anim_time matches 31 run function animated_java:annihilation_recreated/zzzzzzzz/animations/apocalpytic_sigil/tree/leaf_31

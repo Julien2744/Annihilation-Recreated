@@ -1,0 +1,1 @@
+function animated_java:annihilation_recreated/zzzzzzzz/animations/apocalpytic_sigil/tick_animation

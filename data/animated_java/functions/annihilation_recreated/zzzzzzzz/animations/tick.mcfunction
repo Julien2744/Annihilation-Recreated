@@ -1,0 +1,11 @@
+execute if entity @s[tag=aj.annihilation_recreated.animation.entrance] run function animated_java:annihilation_recreated/zzzzzzzz/animations/entrance/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.rake] run function animated_java:annihilation_recreated/zzzzzzzz/animations/rake/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.flense] run function animated_java:annihilation_recreated/zzzzzzzz/animations/flense/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.death] run function animated_java:annihilation_recreated/zzzzzzzz/animations/death/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.secare] run function animated_java:annihilation_recreated/zzzzzzzz/animations/secare/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.cauterize_messes] run function animated_java:annihilation_recreated/zzzzzzzz/animations/cauterize_messes/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.cauterize_them_all] run function animated_java:annihilation_recreated/zzzzzzzz/animations/cauterize_them_all/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.apocalpytic_sigil] run function animated_java:annihilation_recreated/zzzzzzzz/animations/apocalpytic_sigil/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.blossoming_chaos] run function animated_java:annihilation_recreated/zzzzzzzz/animations/blossoming_chaos/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.eyes_of_war] run function animated_java:annihilation_recreated/zzzzzzzz/animations/eyes_of_war/tick
+execute if entity @s[tag=aj.annihilation_recreated.animation.new_sun] run function animated_java:annihilation_recreated/zzzzzzzz/animations/new_sun/tick
