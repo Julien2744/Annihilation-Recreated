@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:annihilation_recreated/zzzzzzzz/animations/death/tree/leaf_40_as_bone
+execute unless entity @s[tag=aj.annihilation_recreated.disable_command_keyframes] at @s run execute if score @s anniR_struct_spawned matches 0 run function annihilation:boss/death/end_death
