@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.annir_apocalpytic_sigil.root] run function animated_java:annir_apocalpytic_sigil/zzzzzzzz/remove/as_root
+kill @e[tag=aj.annir_apocalpytic_sigil.rig_entity]
