@@ -36,8 +36,8 @@ execute store result bossbar annihilation_bossbar max run attribute @e[type=magm
 execute store result bossbar annihilation_bossbar value run data get entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,distance=..2] Health
 
 #msuic
-execute if score #anniR_global anniR_music matches 1 positioned as @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,distance=..2,sort=nearest] run playsound annihilation_recreated:annihilation_by_texilated block @a[distance=..90] ~ ~ ~ 10
-execute if score #anniR_global anniR_music matches 1 run title @p[distance=..90] actionbar [{"text":"now playing ","color":"red"},{"text":"Annihilation","color":"dark_red"},{"text":" by ","color":"red"},{"text":"Texilated","color":"red"}]
+execute if score #anniR_global anniR_music matches 1 run execute at @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,distance=..2,sort=nearest] run function annihilation:boss/play_music
+
 #team
 execute if score #anniR_global anniR_team matches 1 run team join annihilation_team @e[tag=anni_immune,distance=..128]
 

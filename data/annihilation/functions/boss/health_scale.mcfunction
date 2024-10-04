@@ -1,10 +1,10 @@
 #have to change health manually because mutiplyer can't access scoreboard
 #max scale is of 6 players
 
-#3 player
+#3 players
 execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..2,limit=1] anniR_playerCount matches 3 run attribute @s generic.max_health modifier add a8194fae-7dec-11d0-a761-10a0c01e6ff0 "player_count" 0.25 multiply
 
-#4 players 
+#4 players
 execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..2,limit=1] anniR_playerCount matches 4 run attribute @s generic.max_health modifier add a8194fae-7dec-11d0-a761-10a0c01e6ff0 "player_count" 0.5 multiply
 
 #5 players

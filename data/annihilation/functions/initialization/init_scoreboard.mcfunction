@@ -4,10 +4,13 @@
 scoreboard objectives add anniR_visibleHitbox dummy
 #0: vanillia ; 1: modded : 2: heavy_modded
 scoreboard objectives add anniR_difficulty dummy
-#0: off ; 1: on
+#0: off ; 1: on ; 2: music is playing
 scoreboard objectives add anniR_music dummy
+#scoreboard objectives add anniR_music_time dummy
 #0: off ; 1: on
 scoreboard objectives add anniR_team dummy
+#0: off(no-instakill) ; 1: on(instakill)
+scoreboard objectives add anniR_newsun_kill dummy
 #0: off ; 1: on
 scoreboard objectives add anniR_infsub_grief dummy
 #0: demand nether_start ; 1: demand netherite ; 2 boss summoned   only for boss summoned in the structure
@@ -48,7 +51,9 @@ scoreboard objectives add anniR_newsun_size dummy
 scoreboard players set #anniR_global anniR_visibleHitbox 0
 scoreboard players set #anniR_global anniR_difficulty 0
 scoreboard players set #anniR_global anniR_team 1
+scoreboard players set #anniR_global anniR_newsun_kill 1
 scoreboard players set #anniR_global anniR_music 1
+#scoreboard players set #anniR_global anniR_music_time 0
 scoreboard players set #anniR_global anniR_infsub_grief 1
 scoreboard players set #anniR_global anniR_boss_summoner 0
 scoreboard players set #anniR_global anniR_newsun_div 16

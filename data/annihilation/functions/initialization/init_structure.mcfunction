@@ -14,4 +14,4 @@ execute if score #anniR_load anniR_structureTimer matches 25 run scoreboard play
 
 #end of initialisating
 #execute if score #structPlacer structureTimer matches 25 run setblock 0 64 0 diamond_block
-execute if score #anniR_load anniR_structureTimer matches 25 run tellraw @a {"text":"Annihilation Recreated datapack loaded","color":"dark_red","bold":true}
+execute if score #anniR_load anniR_structureTimer matches 25 run function annihilation:initialization/welcome_message

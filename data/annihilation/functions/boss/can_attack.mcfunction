@@ -3,7 +3,7 @@
 
 #new_sun
 execute if score @s anniR_abilityCooldown matches 0 run execute if score @s anniR_health_pour matches 21..50 if score @s anniR_new_sun matches 0 run function animated_java:annihilation_recreated/animations/new_sun/play
-execute if score @s anniR_health_pour matches ..20 run execute if score @s anniR_abilityCooldown matches 0 if score @s anniR_new_sun matches 1 run function animated_java:annihilation_recreated/animations/new_sun/play
+execute if score @s anniR_health_pour matches ..20 run execute if score @s anniR_abilityCooldown matches 0 if score @s anniR_new_sun matches 1 unless entity @e[type=magma_cube,limit=1,tag=new_sun_hitbox,tag=anni_immune,distance=..32] run function animated_java:annihilation_recreated/animations/new_sun/play
 
 #stoke the blaze
 execute unless score @s anniR_buffedCount matches 2 run execute if score @s anniR_isBuffed matches 0 if score @s anniR_health_pour matches 52..65 if score @s anniR_abilityCooldown matches 0 run function annihilation:boss/abilities/stoke_the_blaze
