@@ -1,4 +1,0 @@
-#update boss health %
-execute store result score @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] math_anni_mem run data get entity @s Health
-scoreboard players operation @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] math_anni_mem /= @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] math_anni_div
-scoreboard players operation @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] anniR_health_pour = @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] math_anni_mem

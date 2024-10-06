@@ -1,9 +1,0 @@
-function animated_java:annihilation_recreated/animations/rake/stop
-function animated_java:annihilation_recreated/animations/flense/stop
-function animated_java:annihilation_recreated/animations/secare/stop
-function animated_java:annihilation_recreated/animations/cauterize_messes/stop
-function animated_java:annihilation_recreated/animations/cauterize_them_all/stop
-function animated_java:annihilation_recreated/animations/apocalpytic_sigil/stop
-function animated_java:annihilation_recreated/animations/blossoming_chaos/stop
-function animated_java:annihilation_recreated/animations/eyes_of_war/stop
-function animated_java:annihilation_recreated/animations/new_sun/stop
