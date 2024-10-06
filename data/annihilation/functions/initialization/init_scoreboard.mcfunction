@@ -50,14 +50,12 @@ scoreboard objectives add anniR_newsun_size dummy
 #annihilation
 scoreboard players set #anniR_global anniR_visibleHitbox 0
 scoreboard players set #anniR_global anniR_difficulty 0
-scoreboard players set #anniR_global anniR_team 1
+scoreboard players set #anniR_global anniR_team 0
 scoreboard players set #anniR_global anniR_newsun_kill 1
 scoreboard players set #anniR_global anniR_music 1
-#scoreboard players set #anniR_global anniR_music_time 0
 scoreboard players set #anniR_global anniR_infsub_grief 1
 scoreboard players set #anniR_global anniR_boss_summoner 0
 scoreboard players set #anniR_global anniR_newsun_div 16
-#execute store result score #anniR_global anniR_checkMobGrief run gamerule mobGriefing
 
 team add annihilation_team
 
