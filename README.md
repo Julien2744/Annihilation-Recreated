@@ -10,7 +10,7 @@
 > I only recreate the boss model/texture and attacks, the [music](https://www.youtube.com/watch?v=QiTEljrS05I) and the [structure](https://wynncraft.wiki.gg/wiki/Corruption_Portal) were directly taken from **Wynncraft**
 
 > [!NOTE]
-> this datapack require a RessourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/1.1)
+> this datapack require a RessourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/b1.3)
 >
 > require [attributefix](https://modrinth.com/mod/attributefix) if you're ***not playing*** on ***vanilla difficulty*** in `/function annihilation:admin/_/set_config`
 > 
@@ -39,9 +39,9 @@ The difficulty of the boss can be change in `/function annihilation:admin/_/set_
 
 `vanilla` : 800 Health
 
-`modded` : 8000 Health
+`modded` : 2500 Health
 
-`vanilla` : 250000 Health
+`heavy_modded` : 8000 Health
 
 The damage also change depending on the diffculty
 
