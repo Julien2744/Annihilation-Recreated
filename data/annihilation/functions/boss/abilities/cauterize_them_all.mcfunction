@@ -6,4 +6,4 @@ execute at @e[tag=anni_target,tag=!anni_immune,limit=1,distance=9..128] run summ
 
 execute unless score @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] anniR_isBuffed matches 0 run scoreboard players remove @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] anniR_isBuffed 1
 
-execute if score #anniR_global anniR_team matches 1 run team join annihilation_team @e[tag=anni_immune,distance=..128]
+execute if score #anniR_global anniR_team matches 1 run team join annihilation_team @e[type=armor_stand,tag=anni_immune,tag=anni_meteor_b,distance=..20,limit=3]

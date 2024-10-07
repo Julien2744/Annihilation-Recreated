@@ -19,8 +19,7 @@ kill @e[type=end_crystal,tag=anni_immune,distance=..128]
 kill @e[type=enderman,tag=anni_immune,distance=..128]
 kill @e[type=skeleton,tag=anni_immune,distance=..128]
 kill @e[type=bat,tag=anni_immune,tag=eye_plat,distance=..128]
-data modify entity @e[type=magma_cube,limit=1,tag=new_sun_hitbox,tag=anni_immune,distance=..32] Size set value 0
-kill @e[type=magma_cube,tag=new_sun_hitbox,tag=anni_immune,distance=..32]
+kill @e[type=slime,tag=!anni_hitbox,tag=anni_immune,nbt={Size:0},distance=..128]
 kill @e[type=item_display,limit=1,tag=new_sun,tag=anni_immune,distance=..32]
 
 execute as @e[type=minecraft:item_display,tag=aj.annir_apocalpytic_sigil.root,distance=..128] run function animated_java:annir_apocalpytic_sigil/remove/this

@@ -55,9 +55,12 @@ scoreboard players set #anniR_global anniR_newsun_kill 1
 scoreboard players set #anniR_global anniR_music 1
 scoreboard players set #anniR_global anniR_infsub_grief 1
 scoreboard players set #anniR_global anniR_boss_summoner 0
-scoreboard players set #anniR_global anniR_newsun_div 16
+scoreboard players set #anniR_global anniR_newsun_div 20
 
 team add annihilation_team
+team modify annihilation_team color dark_red
+team modify annihilation_team friendlyFire false
+team modify annihilation_team seeFriendlyInvisibles false
 
 scoreboard players set #anniR_load anniR_loadScoreboard 1
 #say scoreboard finished

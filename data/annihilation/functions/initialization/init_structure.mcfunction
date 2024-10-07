@@ -1,6 +1,10 @@
 #place the structure
 execute if score #anniR_load anniR_structureTimer matches 1 run forceload add 195 -1330 393 -1245
 
+#remove old summoner if the structure got generated again
+execute if score #anniR_load anniR_structureTimer matches 1 run execute positioned 212 -37.5 -1291.05 run kill @e[type=interaction,tag=anni_summoner,distance=..8]
+execute if score #anniR_load anniR_structureTimer matches 1 run execute positioned 212 -37.5 -1291.05 run kill @e[type=item_display,tag=anni_item,distance=..8]
+
 #comment this line to disable structure generation
 execute if score #anniR_load anniR_structureTimer matches 2 run function annihilation:initialization/generate_structure
 

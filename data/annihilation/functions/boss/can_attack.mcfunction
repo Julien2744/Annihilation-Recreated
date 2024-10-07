@@ -15,9 +15,9 @@ execute if score @s anniR_abilityCooldown matches 0 run execute run execute unle
 #secare
 execute if score @s anniR_health_pour matches ..30 run execute if score @s anniR_abilityCooldown matches 0 positioned ^ ^ ^3 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..8] run function animated_java:annihilation_recreated/animations/secare/play
 #rake
-execute if score @s anniR_health_pour matches 31.. run execute if score @s anniR_abilityCooldown matches 0 positioned ^7 ^ ^2 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..8.5] run function animated_java:annihilation_recreated/animations/rake/play
+execute if score @s anniR_health_pour matches 31.. run execute if score @s anniR_abilityCooldown matches 0 positioned ^6 ^ ^3 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..8] run function animated_java:annihilation_recreated/animations/rake/play
 #flense
-execute if score @s anniR_health_pour matches 31.. run execute if score @s anniR_abilityCooldown matches 0 positioned ^-7 ^ ^2 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..8.5] run function animated_java:annihilation_recreated/animations/flense/play
+execute if score @s anniR_health_pour matches 31.. run execute if score @s anniR_abilityCooldown matches 0 positioned ^-6 ^ ^3 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..8] run function animated_java:annihilation_recreated/animations/flense/play
 
 #cauterize_them_all
 execute if score @s anniR_health_pour matches ..40 run execute if score @s anniR_abilityCooldown matches 0 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=9..128] if predicate annihilation:random_25 run function animated_java:annihilation_recreated/animations/cauterize_them_all/play

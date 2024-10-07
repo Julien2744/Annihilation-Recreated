@@ -17,5 +17,3 @@ execute positioned ^4 ^ ^15 run function annihilation:boss/summons/bighorn_devil
 
 execute positioned ^-7 ^ ^10 run function annihilation:boss/summons/mayhem_imp
 execute positioned ^7 ^ ^10 run function annihilation:boss/summons/mayhem_imp
-
-execute if score #anniR_global anniR_team matches 1 run team join annihilation_team @e[tag=anni_immune,distance=..128]

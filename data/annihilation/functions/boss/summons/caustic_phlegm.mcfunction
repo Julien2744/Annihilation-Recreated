@@ -3,3 +3,5 @@ execute if score #anniR_global anniR_difficulty matches 1 run summon magma_cube 
 execute if score #anniR_global anniR_difficulty matches 2 run summon magma_cube ~ ~ ~ {DeathLootTable:"minecraft:empty",PersistenceRequired:1b,Health:52f,Size:2,Tags:["anni_immune"],Attributes:[{Name:generic.max_health,Base:52},{Name:generic.knockback_resistance,Base:10},{Name:generic.attack_damage,Base:30},{Name:generic.armor,Base:20},{Name:generic.armor_toughness,Base:2},{Name:generic.attack_knockback,Base:1},{Name:generic.follow_range,Base:100}]}
 
 damage @e[type=magma_cube,limit=1,distance=0,tag=anni_immune] 0 mob_attack by @e[tag=anni_target,distance=..128,limit=1]
+
+execute if score #anniR_global anniR_team matches 1 run team join annihilation_team @e[type=magma_cube,tag=anni_immune,tag=!anni_hitbox,distance=..0,limit=1,sort=nearest]

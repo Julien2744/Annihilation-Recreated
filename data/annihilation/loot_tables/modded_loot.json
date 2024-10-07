@@ -1,239 +1,216 @@
 {
-    "pools": [
-      {
-        "rolls": 30,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:netherite_block",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 6
-                }
+  "pools": [
+    {
+      "rolls": 30,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_block",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 8
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:yellow_shulker_box",
-            "weight": 4,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:shulker_box",
-                "name": "annihilation:gold_box_modded"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"gold box\",\"color\":\"gold\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_shulker_box",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:shulker_box",
+              "name": "annihilation:gold_box_modded"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"gold box\",\"color\":\"gold\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_shulker_box",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:shulker_box",
+              "name": "annihilation:iron_box_modded"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"iron box\",\"color\":\"white\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_block",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 28,
+                "max": 42
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:white_shulker_box",
-            "weight": 4,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:shulker_box",
-                "name": "annihilation:iron_box_modded"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"iron box\",\"color\":\"white\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_shulker_box",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:shulker_box",
+              "name": "annihilation:redstone_box_modded"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"redstone box\",\"color\":\"red\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_shulker_box",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:shulker_box",
+              "name": "annihilation:emerald_box_vanilla"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"emerald box\",\"color\":\"green\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chest",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:chest",
+              "name": "minecraft:chests/stronghold_library"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"stronghold library chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 9
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:diamond_block",
-            "weight": 4,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 28,
-                  "max": 42
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chest",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:chest",
+              "name": "minecraft:chests/ancient_city"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"ancient city chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:red_shulker_box",
-            "weight": 5,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:shulker_box",
-                "name": "annihilation:redstone_box_modded"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"redstone box\",\"color\":\"red\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chest",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:chest",
+              "name": "minecraft:chests/end_city_treasure"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"end city chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 12
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:lime_shulker_box",
-            "weight": 3,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:shulker_box",
-                "name": "annihilation:emerald_box_vanilla"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"emerald box\",\"color\":\"green\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chest",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:chest",
+              "name": "minecraft:chests/bastion_treasure"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"bastion treasure chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 7
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:chest",
-            "weight": 3,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:chest",
-                "name": "minecraft:chests/stronghold_library"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"stronghold library chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
-              },
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 6,
-                  "max": 9
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chest",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_loot_table",
+              "type": "minecraft:chest",
+              "name": "minecraft:chests/buried_treasure"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"buried treasure chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:chest",
-            "weight": 3,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:chest",
-                "name": "minecraft:chests/nether_bridge"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"nether bridge chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
-              },
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 6,
-                  "max": 9
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:chest",
-            "weight": 4,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:chest",
-                "name": "minecraft:chests/ancient_city"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"ancient city chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
-              },
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 8
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:chest",
-            "weight": 3,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:chest",
-                "name": "minecraft:chests/end_city_treasure"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"end city chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
-              },
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 6,
-                  "max": 12
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:chest",
-            "weight": 4,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:chest",
-                "name": "minecraft:chests/bastion_treasure"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"bastion treasure chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
-              },
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 2,
-                  "max": 5
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:chest",
-            "weight": 5,
-            "functions": [
-              {
-                "function": "minecraft:set_loot_table",
-                "type": "minecraft:chest",
-                "name": "minecraft:chests/buried_treasure"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"buried treasure chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
-              },
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 6
-                }
-              }
-            ]
-          }
-        ]
-      }
-    ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }  

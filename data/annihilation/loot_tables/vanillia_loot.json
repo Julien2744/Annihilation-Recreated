@@ -5,14 +5,28 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_block",
-          "weight": 1,
+          "name": "minecraft:gold_block",
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 3
+                "min": 42,
+                "max": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_block",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
               }
             }
           ]
@@ -20,7 +34,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_block",
-          "weight": 5,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -34,13 +48,13 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_block",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 6,
-                "max": 24
+                "max": 28
               }
             }
           ]
@@ -48,7 +62,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:red_shulker_box",
-          "weight": 5,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -64,7 +78,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lime_shulker_box",
-          "weight": 6,
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -80,7 +94,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chest",
-          "weight": 3,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -103,30 +117,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chest",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_loot_table",
-              "type": "minecraft:chest",
-              "name": "minecraft:chests/nether_bridge"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"nether bridge chest\",\"color\":\"#00FFF0\",\"italic\":false}'}}"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 6,
-                "max": 9
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:chest",
-          "weight": 2,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -163,8 +154,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 6,
-                "max": 12
+                "min": 4,
+                "max": 8
               }
             }
           ]
@@ -172,7 +163,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chest",
-          "weight": 4,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -186,8 +177,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 3
+                "min": 3,
+                "max": 8
               }
             }
           ]
