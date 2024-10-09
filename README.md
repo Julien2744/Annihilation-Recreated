@@ -46,7 +46,7 @@ The difficulty of the boss can be change in `/function annihilation:admin/_/set_
 The damage also change depending on the diffculty
 
 > [!NOTE]
-> The boss Health scale depanding on how many player there are in 80 blocks area and if there are more than 3 players
+> The boss health scale depanding on how many players there are in 80 blocks radius and if there are more than 3 players
 >
 > scaling stop at 6 players but it can be change manualy in the folder `/data/annihilation/functions/boss/health_scale.mcfunction`
 
@@ -54,7 +54,7 @@ The damage also change depending on the diffculty
 
 All Annihilation attacks are base from the [wiki](https://wynncraft.wiki.gg/wiki/Annihilation#Combat)
 
-The boss can change target (player or mob) as long as it doesn't have the tag: `anni_immune`
+The boss can change/attack target (player or mob) as long as it doesn't have the tag: `anni_immune`
 
 You can manually change target using `/execute as <entity> run function annihilation:set_target`
 
