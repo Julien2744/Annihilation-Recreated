@@ -1,6 +1,10 @@
 #command here are executed as the ring at the ring
 execute if entity @s[tag=follow] unless score @s anniR_as_turn matches 10 run execute positioned as @e[tag=anni_target,distance=..128,limit=1] rotated 0 0 run tp ~ ~ ~
 
+#sound
+execute if score @s anniR_as_turn matches 11 if entity @s[tag=attack] run playsound item.trident.thunder hostile @a[distance=..8] ~ ~ ~ 6
+execute if entity @s[tag=attack] run scoreboard players reset @s anniR_as_turn
+
 #damage
 execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] anniR_isBuffed matches 0 run execute if score #anniR_global anniR_difficulty matches 0 run execute if entity @s[tag=attack] if predicate annihilation:random_50 run damage @e[tag=anni_target,distance=..2.5,limit=1] 1.5 annihilation:apocalpytic_sigil by @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=..128,limit=1]
 

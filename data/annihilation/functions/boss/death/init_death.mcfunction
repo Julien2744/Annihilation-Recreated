@@ -1,4 +1,7 @@
 tag @e[tag=anni_target,distance=..128,limit=1] remove anni_target
+
+advancement grant @a[distance=..64] only annihilation:nether/kill_annihilation
+
 function annihilation:boss/death/stop_all_anim
 function annihilation:boss/anim_head
 execute as @e[type=item_display,tag=aj.annir_head.root,limit=1,distance=..32,sort=nearest] run function animated_java:annir_head/remove/this

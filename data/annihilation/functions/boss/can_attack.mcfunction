@@ -41,3 +41,7 @@ execute if score @s anniR_abilityCooldown matches 0 unless entity @e[type=end_cr
 
 #eye_of_war
 execute if score @s anniR_abilityCooldown matches 0 unless entity @e[type=skeleton,distance=..90,tag=anni_immune] run execute if predicate annihilation:random_5 run function animated_java:annihilation_recreated/animations/eyes_of_war/play
+
+
+#randomly face target when he can attack
+execute if score @s anniR_struct_spawned matches 0 run execute if predicate annihilation:random_5 run function annihilation:boss/face_target

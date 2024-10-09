@@ -5,7 +5,9 @@ playsound minecraft:entity.blaze.shoot hostile @a[distance=..128] ~ ~ ~ 10 0
 playsound minecraft:block.respawn_anchor.set_spawn hostile @a[distance=..128] ~ ~ ~ 10
 
 #new sun
-summon magma_cube ~ ~ ~ {Glowing:0b,NoGravity:1b,Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,Health:40f,Size:1,Tags:["anni_immune","new_sun_hitbox"],CustomName:'{"text":"new sun","color":"red"}',ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:40}]}
+execute if score #anniR_global anniR_difficulty matches 0 run summon magma_cube ~ ~ ~ {Glowing:0b,NoGravity:1b,Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,Health:40f,Size:1,Tags:["anni_immune","new_sun_hitbox"],CustomName:'{"text":"new sun","color":"red"}',ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:40}]}
+execute if score #anniR_global anniR_difficulty matches 1 run summon magma_cube ~ ~ ~ {Glowing:0b,NoGravity:1b,Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,Health:60f,Size:1,Tags:["anni_immune","new_sun_hitbox"],CustomName:'{"text":"new sun","color":"red"}',ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:60}]}
+execute if score #anniR_global anniR_difficulty matches 2 run summon magma_cube ~ ~ ~ {Glowing:0b,NoGravity:1b,Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,Health:100f,Size:1,Tags:["anni_immune","new_sun_hitbox"],CustomName:'{"text":"new sun","color":"red"}',ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:100}]}
 summon item_display ~ ~ ~ {width:1f,height:1f,Tags:["anni_immune","new_sun"],brightness:{sky:15,block:15},start_interpolation:0,interpolation_duration:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:shroomlight",Count:1b}}
 
 #make the target aggro to the new_sun

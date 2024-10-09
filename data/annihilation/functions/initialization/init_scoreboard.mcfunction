@@ -1,6 +1,5 @@
 #global
 #annihilation
-#scoreboard objectives add anniR_checkMobGrief dummy
 scoreboard objectives add anniR_visibleHitbox dummy
 #0: vanillia ; 1: modded : 2: heavy_modded
 scoreboard objectives add anniR_difficulty dummy
@@ -15,6 +14,8 @@ scoreboard objectives add anniR_newsun_kill dummy
 scoreboard objectives add anniR_infsub_grief dummy
 #0: demand nether_start ; 1: demand netherite ; 2 boss summoned   only for boss summoned in the structure
 scoreboard objectives add anniR_boss_summoner dummy
+#0: false ; 1: true
+scoreboard objectives add anniR_checkMobLoot dummy
 #math
 scoreboard objectives add anniR_newsun_div dummy
 
@@ -37,6 +38,8 @@ scoreboard objectives add anni_motZ dummy
 scoreboard objectives add anni_pitch dummy
 scoreboard objectives add anni_yaw dummy
 scoreboard objectives add anniR_new_sun dummy
+#0: false ; 1: true
+scoreboard objectives add anniR_despawn dummy
 #use for math
 scoreboard objectives add math_anni_mem dummy
 scoreboard objectives add math_anni_div dummy
@@ -46,8 +49,9 @@ scoreboard objectives add anniR_as_turn dummy
 scoreboard objectives add anniR_newsun_comp dummy
 scoreboard objectives add anniR_newsun_size dummy
 
-#initialize
+#initialize (only for global)
 #annihilation
+execute store result score #anniR_global anniR_checkMobLoot run gamerule doMobLoot
 scoreboard players set #anniR_global anniR_visibleHitbox 0
 scoreboard players set #anniR_global anniR_difficulty 0
 scoreboard players set #anniR_global anniR_team 0
@@ -62,5 +66,10 @@ team modify annihilation_team color dark_red
 team modify annihilation_team friendlyFire false
 team modify annihilation_team seeFriendlyInvisibles false
 
+## scoreboard version ##
+scoreboard players set #anniR_load anniR_scoreboardVersion 1
+
+#end of initialisating
 scoreboard players set #anniR_load anniR_loadScoreboard 1
+
 #say scoreboard finished
