@@ -13,6 +13,7 @@
 > this datapack require a RessourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/b1.3)
 >
 > require [attributefix](https://modrinth.com/mod/attributefix) if you're ***not playing*** on ***vanilla difficulty*** in `/function annihilation:admin/_/set_config`
+> Or if you are challenging the boss with more than 3 players
 > 
 > Current version work for `Minecraft 1.20.1`
 
@@ -31,7 +32,7 @@ This datapack have a config menu, wich you can access it using `/function annihi
 
 ### summoning Annihilation
 
-You can summon **Annihilation** by going to the **corruption portal** and giving the portal (right-clicking) the items it demand (nether_star and netherite_ingot)
+You can summon **Annihilation** by going to the **corruption portal** and giving the portal (right-clicking) the items it demand (nether_star and 2 netherite_ingot)
 
 Or summon anywhere in the world using `/function annihilation:admin/_/summon`, or at the portal using `/function annihilation:boss_summoner/struct_boss_summon`
 
