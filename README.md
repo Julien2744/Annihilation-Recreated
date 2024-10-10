@@ -47,9 +47,9 @@ The difficulty of the boss can be change in `/function annihilation:admin/_/set_
 The damage also change depending on the diffculty
 
 > [!NOTE]
-> The boss health scale depanding on how many players there are in 80 blocks radius and if there are more than 3 players
+> The boss health scale depanding on how many players there are in 64 blocks radius and if there are more than 3 players
 >
-> scaling stop at 6 players but it can be change manualy in the folder `/data/annihilation/functions/boss/health_scale.mcfunction`
+> scaling stop at 6 players but it can be change manualy in the file `/data/annihilation/functions/boss/health_scale.mcfunction`
 
 ### Annihilation behavior
 
