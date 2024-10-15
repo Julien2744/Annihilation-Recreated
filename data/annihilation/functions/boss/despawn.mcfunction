@@ -1,6 +1,6 @@
 #executed as the strcuture boss if there no player left (if the player count is superior to 1)
 
-tag @e[tag=anni_target,distance=..128,limit=1] remove anni_target
+execute at @a run tag @e[tag=anni_target,distance=..7,limit=1] remove anni_target
 scoreboard players set @s anniR_despawn 1
 
 function annihilation:boss/death/stop_all_anim
@@ -31,10 +31,12 @@ bossbar remove annihilation_newsun_comp
 function annihilation:boss_summoner/summon
 
 #announce defeat
-playsound minecraft:entity.lightning_bolt.thunder hostile @a ~ ~ ~ 64
+playsound minecraft:entity.lightning_bolt.thunder hostile @a[distance=..128] ~ ~ ~ 12
 tellraw @a [{"text":"There were no players left to defeat ","color":"gray"},{"text":"Annihilation","color":"dark_red"},{"text":"...","color":"gray"}]
 
-stopsound @a[distance=..128] record annihilation_recreated:annihilation_by_texilated
+execute at @a run stopsound @p[distance=..2] record annihilation_recreated:annihilation_by_texilated
+scoreboard players set #anniR_global anniR_music 1
+schedule clear annihilation:boss/play_music
 
 #despawn anni
 data modify entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] Size set value 0

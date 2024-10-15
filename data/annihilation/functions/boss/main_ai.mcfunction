@@ -3,9 +3,8 @@
 #execute commands if the boss has taken damage
 execute as @e[type=magma_cube,nbt={NoAI:1b,Size:16,HurtTime:9s},distance=..8,limit=1,sort=nearest] as @s run function annihilation:boss/hurt
 
-#make the hitbox stuck to the model
-execute unless entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=0,limit=1,sort=nearest] run ride @e[type=magma_cube,nbt={NoAI:1b,Size:16},distance=..128,limit=1,sort=nearest] dismount
-execute unless entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=0,limit=1,sort=nearest] run tp @e[type=magma_cube,nbt={NoAI:1b,Size:16},distance=..128,limit=1,sort=nearest] @s
+#make the head stuck the the model
+execute positioned ~ ~9.3125 ~ unless entity @e[type=item_display,tag=aj.annir_head.root,distance=..0.25,limit=1,sort=nearest] run tp @e[type=item_display,tag=aj.annir_head.root,distance=..128,limit=1,sort=nearest] ~ ~ ~
 
 #refresh boss health bar (excluded from hurt because of regen and not updated when the boss die)
 execute store result bossbar annihilation_bossbar value run data get entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] Health

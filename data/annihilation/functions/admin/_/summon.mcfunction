@@ -7,6 +7,7 @@ summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,CustomNameVisible:0b,DeathLootTa
 execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] rotated -90 0 run function animated_java:annihilation_recreated/summon
 execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] rotated -90 0 run execute positioned ~ ~9.3125 ~ run function animated_java:annir_head/summon
 execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] run function annihilation:boss/looking_head
+execute as @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] run ride @s mount @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,distance=..2,sort=nearest]
 data modify entity @e[type=item_display,tag=aj.annir_head.bone.sigil,limit=1,distance=..32,sort=nearest] item.id set value "minecraft:air"
 data merge entity @e[type=item_display,tag=aj.annir_head.bone.sigil,limit=1,distance=..32,sort=nearest] {brightness:{sky:15,block:15}}
 data modify entity @e[type=item_display,tag=aj.annihilation_recreated.bone.sigil,limit=1,distance=..32,sort=nearest] item.id set value "minecraft:air"

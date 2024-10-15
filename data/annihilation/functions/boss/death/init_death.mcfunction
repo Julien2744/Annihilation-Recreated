@@ -1,6 +1,6 @@
 tag @e[tag=anni_target,distance=..128,limit=1] remove anni_target
 
-advancement grant @a[distance=..64] only annihilation:nether/kill_annihilation
+execute if entity @a[distance=..64,advancements={annihilation:nether/kill_annihilation = true}] run advancement grant @a[distance=..64] only annihilation:nether/kill_annihilation
 
 function annihilation:boss/death/stop_all_anim
 function annihilation:boss/anim_head

@@ -1,3 +1,7 @@
+execute positioned 212 -39 -1292 run kill @e[type=text_display,tag=anni_item_count,distance=..2]
+execute positioned 212 -39 -1292 run kill @e[type=interaction,tag=anni_summoner,distance=..2]
+execute positioned 212 -39 -1292 run kill @e[type=item_display,tag=anni_item,distance=..2]
+
 execute positioned 212 -39 -1292 run function annihilation:admin/_/summon
 
 fill 221 -39 -1284 207 -24 -1298 air destroy
@@ -10,6 +14,8 @@ setblock 215 -39 -1295 minecraft:light
 setblock 221 -39 -1295 minecraft:light
 setblock 217 -39 -1283 minecraft:light
 setblock 213 -39 -1288 minecraft:light
+
+
 
 execute positioned 212 -39 -1292 run playsound minecraft:entity.warden.emerge hostile @a[distance=..90] ~ ~ ~ 10
 
