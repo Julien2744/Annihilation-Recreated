@@ -4,10 +4,12 @@
 execute as @e[type=magma_cube,nbt={NoAI:1b,Size:16,HurtTime:9s},distance=..8,limit=1,sort=nearest] as @s run function annihilation:boss/hurt
 
 #make the head stuck the the model
-execute positioned ~ ~9.3125 ~ unless entity @e[type=item_display,tag=aj.annir_head.root,distance=..0.25,limit=1,sort=nearest] run tp @e[type=item_display,tag=aj.annir_head.root,distance=..128,limit=1,sort=nearest] ~ ~ ~
+execute if entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=..8,limit=1,sort=nearest] run execute positioned ~ ~9.3125 ~ unless entity @e[type=item_display,tag=aj.annir_head.root,distance=..0.25,limit=1,sort=nearest] run tp @e[type=item_display,tag=aj.annir_head.root,distance=..128,limit=1,sort=nearest] ~ ~ ~
 
 #refresh boss health bar (excluded from hurt because of regen and not updated when the boss die)
-execute store result bossbar annihilation_bossbar value run data get entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] Health
+execute store result score @s anniR_health run data get entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] Health
+execute store result bossbar annihilation_bossbar value run scoreboard players get @s anniR_health
+bossbar set annihilation_bossbar name [{"text":"Annihilation","color":"red"},{"text":" - ","color":"gray"},{"score":{"name":"@s","objective":"anniR_health"},"color":"red"},{"text":"❤","color":"dark_red"}]
 
 #face target
 execute if entity @e[tag=anni_target,distance=..128,limit=1] run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ facing entity @e[tag=anni_target,distance=..128,limit=1]

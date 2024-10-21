@@ -1,25 +1,27 @@
+#msuic
+#playsound
+execute if score #anniR_global anniR_music matches 1 positioned 212 -39 -1292 run playsound annihilation_recreated:annihilation_by_texilated record @a[distance=..90] ~ ~ ~ 10
+#credit
+execute if score #anniR_global anniR_music matches 1 positioned 212 -39 -1292 run title @a[distance=..90] actionbar [{"text":"now playing ","color":"red"},{"text":"Annihilation","color":"dark_red"},{"text":" by ","color":"red"},{"text":"Texilated","color":"dark_red","underlined":true}]
+execute if score #anniR_global anniR_music matches 1 run schedule function annihilation:boss/music_credit 2.25s
+execute if score #anniR_global anniR_music matches 1 run schedule function annihilation:boss/play_music 290s
+#mark schedule
+execute if score #anniR_global anniR_music matches 1 run scoreboard players set #anniR_global anniR_music 2
+
+#kill boss summoner
 execute positioned 212 -39 -1292 run kill @e[type=text_display,tag=anni_item_count,distance=..2]
 execute positioned 212 -39 -1292 run kill @e[type=interaction,tag=anni_summoner,distance=..2]
 execute positioned 212 -39 -1292 run kill @e[type=item_display,tag=anni_item,distance=..2]
 
+#summon
 execute positioned 212 -39 -1292 run function annihilation:admin/_/summon
-
-fill 221 -39 -1284 207 -24 -1298 air destroy
-setblock 209 -39 -1284 minecraft:light
-setblock 207 -39 -1289 minecraft:light
-setblock 206 -39 -1296 minecraft:light
-setblock 208 -27 -1292 minecraft:light
-setblock 214 -39 -1300 minecraft:light
-setblock 215 -39 -1295 minecraft:light
-setblock 221 -39 -1295 minecraft:light
-setblock 217 -39 -1283 minecraft:light
-setblock 213 -39 -1288 minecraft:light
-
-
-
-execute positioned 212 -39 -1292 run playsound minecraft:entity.warden.emerge hostile @a[distance=..90] ~ ~ ~ 10
-
 execute positioned 212 -39 -1292 run scoreboard players set @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] anniR_struct_spawned 1
-
 execute positioned 212 -39 -1292 run execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] run function annihilation:boss/anim_head
 execute positioned 212 -39 -1292 run execute as @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] at @s run function animated_java:annihilation_recreated/animations/entrance/play
+
+#anti-suffocation
+execute store result score #anniR_global anniR_checkMobGrief run gamerule mobGriefing
+execute if score #anniR_global anniR_checkMobGrief matches 1 run function annihilation:boss_summoner/anti_suffocation
+
+#sound
+execute positioned 212 -39 -1292 run playsound minecraft:entity.warden.emerge hostile @a[distance=..90] ~ ~ ~ 10

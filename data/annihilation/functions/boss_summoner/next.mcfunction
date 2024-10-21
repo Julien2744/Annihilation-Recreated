@@ -26,7 +26,7 @@ execute if score #anniR_global anniR_boss_summoner matches 3 run kill @e[type=it
 
 #summon
 execute if score #anniR_global anniR_boss_summoner matches 3 run function annihilation:boss_summoner/struct_boss_summon
-execute if score #anniR_global anniR_boss_summoner matches 3 run scoreboard players set #anniR_global anniR_boss_summoner 0
+#execute if score #anniR_global anniR_boss_summoner matches 3 run scoreboard players set #anniR_global anniR_boss_summoner 0
 
 #item passed
 execute as @e[type=item_display,tag=anni_item,distance=..8,limit=1] at @s positioned ^ ^1 ^1.5 run function annihilation:boss/effects/sigil_small

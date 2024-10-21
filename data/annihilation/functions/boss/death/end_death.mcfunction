@@ -8,10 +8,10 @@ execute if score #anniR_global anniR_checkMobLoot matches 1 if score #anniR_glob
 
 execute if score #anniR_global anniR_checkMobLoot matches 1 run summon item ^ ^1 ^5 {Glowing:1b,CustomNameVisible:1b,CustomName:'{"text":"Corrupted Trophy","color":"#45098a","bold":true,"italic":false}',Item:{id:"minecraft:nether_wart",Count:1b,tag:{display:{Name:'{"text":"Corrupted Trophy","color":"#45098a","bold":true,"italic":false}'},CustomModelData:167808}}}
 
-
 execute if score @s anniR_struct_spawned matches 1 run function annihilation:boss_summoner/summon
 
-bossbar remove annihilation_bossbar
-bossbar remove annihilation_newsun_comp
-
 function animated_java:annihilation_recreated/remove/this
+
+execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] run bossbar remove annihilation_bossbar
+execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] run bossbar remove annihilation_newsun_comp
+execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] run tag @e[tag=anni_target,distance=..128,limit=1] remove anni_target
