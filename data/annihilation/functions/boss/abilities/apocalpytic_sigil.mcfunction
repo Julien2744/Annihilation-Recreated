@@ -1,4 +1,7 @@
 function animated_java:annir_apocalpytic_sigil/summon
+data merge entity @e[type=item_display,tag=aj.annir_apocalpytic_sigil.bone,limit=1,distance=..2,sort=nearest] {brightness:{sky:15,block:15}}
+data merge entity @e[type=item_display,tag=aj.annir_apocalpytic_sigil.bone.beam,limit=1,distance=..2,sort=nearest] {brightness:{sky:15,block:15}}
+data merge entity @e[type=item_display,tag=aj.annir_apocalpytic_sigil.bone.red_ring,limit=1,distance=..2,sort=nearest] {brightness:{sky:15,block:15}}
 
 playsound minecraft:entity.evoker.cast_spell hostile @a[distance=..50] ~ ~ ~ 3
 

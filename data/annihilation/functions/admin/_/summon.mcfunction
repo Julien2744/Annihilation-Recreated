@@ -1,7 +1,7 @@
 #root nbt   CustomName:'{"text":"Annihilation","color":"dark_red"}',Tags:["anni_body","anni_immune"]
 
 #hitbox
-summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,CustomNameVisible:0b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Health:800f,Size:16,Tags:["anni_hitbox","anni_immune","ps-mob"],CustomName:'{"text":"Annihilation","color":"dark_red"}',ActiveEffects:[{Id:12,Amplifier:5b,Duration:-1,ShowParticles:0b},{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:800},{Name:generic.armor,Base:10}],HandItems:[{id:"minecraft:wooden_axe",Count:1b,tag:{Unbreakable:1b}},{}],HandDropChances:[0.000F,0.085F]}
+summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,CustomNameVisible:0b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Health:800f,Size:16,Tags:["anni_hitbox","anni_immune","ps-mob","mobvariants.blacklist","in.checked"],CustomName:'{"text":"Annihilation","color":"dark_red"}',ActiveEffects:[{Id:12,Amplifier:5b,Duration:-1,ShowParticles:0b},{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:800},{Name:generic.armor,Base:10}],HandItems:[{id:"minecraft:wooden_axe",Count:1b,tag:{Unbreakable:1b}},{}],HandDropChances:[0.000F,0.085F]}
 execute if score #anniR_global anniR_visibleHitbox matches 1 run data modify entity @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] Glowing set value 1b
 
 #model
@@ -42,4 +42,3 @@ execute store result bossbar annihilation_bossbar max run attribute @e[type=magm
 execute store result bossbar annihilation_bossbar value run data get entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,distance=..2] Health
 
 tag @p[tag=!anni_target,distance=..128,gamemode=!creative,gamemode=!spectator,limit=1] add anni_target
-

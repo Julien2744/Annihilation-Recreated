@@ -1,16 +1,16 @@
 playsound minecraft:entity.blaze.shoot hostile @a[distance=..50] ~ ~ ~ 3
 
-summon arrow ^ ^ ^5 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^-1.25 ^-2 ^6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^1.3 ^ ^5 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^1 ^-2.3 ^5 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^2 ^1 ^2 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^1.5 ^2 ^6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^1 ^2.25 ^5 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^-1 ^2 ^6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^-2 ^-1 ^6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^2 ^-1.5 ^5 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
-summon arrow ^-1.25 ^3 ^5 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1150}
+summon arrow ^ ^ ^5 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^-1.25 ^-2 ^6.2 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^1.3 ^ ^5 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^0.3 ^-2.3 ^6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^2 ^1 ^2 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^1.5 ^2 ^6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^0.8 ^2.25 ^6.7 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^-1.2 ^2.1 ^6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^-2 ^-1 ^6.3 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^2 ^-1.5 ^6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
+summon arrow ^-2.25 ^3 ^6.6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anni_projectile"],life:1180}
 
 #damage is in annihilation:boss/abilities/cleasing_inferno/apply_motion
 

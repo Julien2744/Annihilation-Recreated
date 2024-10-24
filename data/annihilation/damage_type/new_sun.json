@@ -1,6 +1,6 @@
 {
-    "message_id": "annir.apocalpytic_sigil",
-    "exhaustion": 0,
+    "message_id": "annir.new_sun",
+    "exhaustion": 1,
     "scaling": "when_caused_by_living_non_player",
     "effects": "burning"
 }

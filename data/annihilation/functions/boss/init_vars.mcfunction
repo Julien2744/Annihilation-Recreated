@@ -15,3 +15,5 @@ scoreboard players set @s anniR_despawn 0
 
 scoreboard players add @s math_anni_div 100
 scoreboard players add @s math_anni_mem 100
+
+execute store result score #anniR_global anniR_00_loaded run forceload query 0 0

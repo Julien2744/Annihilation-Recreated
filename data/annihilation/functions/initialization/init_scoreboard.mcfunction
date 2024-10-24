@@ -1,19 +1,22 @@
 #global
 #annihilation
 scoreboard objectives add anniR_visibleHitbox dummy
-#0: vanillia ; 1: modded : 2: heavy_modded
-scoreboard objectives add anniR_difficulty dummy
-#0: off ; 1: on ; 2: music is playing
-scoreboard objectives add anniR_music dummy
-#scoreboard objectives add anniR_music_time dummy
-#0: off ; 1: on
-scoreboard objectives add anniR_team dummy
 #0: off(no-instakill) ; 1: on(instakill)
 scoreboard objectives add anniR_newsun_kill dummy
-#0: off ; 1: on
-scoreboard objectives add anniR_newsun_grief dummy
 #0: demand nether_start ; 1: demand netherite_1 ; 2: demand netherite_2 ; 3: boss summoned   only for boss summoned in the structure
 scoreboard objectives add anniR_boss_summoner dummy
+#0: false ; 1: true
+scoreboard objectives add anniR_00_loaded dummy
+#config
+#0: vanillia ; 1: modded : 2: heavy_modded
+scoreboard objectives add anniR_difficulty dummy
+#0: off ; 1: on
+scoreboard objectives add anniR_onlyTrophy dummy
+#0: off ; 1: on ; 2: music is playing
+scoreboard objectives add anniR_music dummy
+#0: off ; 1: on
+scoreboard objectives add anniR_team dummy
+scoreboard objectives add anniR_newsun_grief dummy
 #gamerule
 #0: false ; 1: true
 scoreboard objectives add anniR_checkMobLoot dummy
@@ -55,12 +58,15 @@ scoreboard objectives add anniR_newsun_size dummy
 #initialize (only for global)
 #annihilation
 scoreboard players set #anniR_global anniR_visibleHitbox 0
+scoreboard players set #anniR_global anniR_boss_summoner 0
+#config
 scoreboard players set #anniR_global anniR_difficulty 0
+scoreboard players set #anniR_global anniR_onlyTrophy 0
+scoreboard players set #anniR_global anniR_music 1
 scoreboard players set #anniR_global anniR_team 0
 scoreboard players set #anniR_global anniR_newsun_kill 1
-scoreboard players set #anniR_global anniR_music 1
 scoreboard players set #anniR_global anniR_newsun_grief 0
-scoreboard players set #anniR_global anniR_boss_summoner 0
+#math
 scoreboard players set #anniR_global anniR_newsun_div 20
 
 #create team
@@ -70,7 +76,7 @@ team modify annihilation_team friendlyFire false
 team modify annihilation_team seeFriendlyInvisibles false
 
 ## scoreboard version ##
-scoreboard players set #anniR_load anniR_scoreboardVersion 2
+scoreboard players set #anniR_load anniR_scoreboardVersion 3
 
 #end of initialisating
 scoreboard players set #anniR_load anniR_loadScoreboard 1
