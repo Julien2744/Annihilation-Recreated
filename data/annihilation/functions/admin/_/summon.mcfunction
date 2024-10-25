@@ -25,8 +25,8 @@ execute if score #anniR_global anniR_team matches 1 run team join annihilation_t
 execute as @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..2,limit=1] at @s run function annihilation:boss/init_vars
 
 #change data due to difficulty
-execute if score #anniR_global anniR_difficulty matches 1 run execute at @s run data merge entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,sort=nearest,distance=..2] {Health:2500,Attributes:[{Name:generic.max_health,Base:2500},{Name:generic.armor,Base:15}]}
-execute if score #anniR_global anniR_difficulty matches 2 run execute at @s run data merge entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,sort=nearest,distance=..2] {Health:8000,Attributes:[{Name:generic.max_health,Base:8000},{Name:generic.armor,Base:20}]}
+execute if score #anniR_global anniR_difficulty matches 1 run data merge entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,sort=nearest,distance=..2] {Health:2500,Attributes:[{Name:generic.max_health,Base:2500},{Name:generic.armor,Base:15}]}
+execute if score #anniR_global anniR_difficulty matches 2 run data merge entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,sort=nearest,distance=..2] {Health:8000,Attributes:[{Name:generic.max_health,Base:8000},{Name:generic.armor,Base:20}]}
 
 #change health depanding of the number of player
 execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..2,limit=1] anniR_playerCount matches 2.. run execute as @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] at @s run function annihilation:boss/health_scale

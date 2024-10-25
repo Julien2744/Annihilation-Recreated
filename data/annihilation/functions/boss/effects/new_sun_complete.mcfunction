@@ -1,6 +1,6 @@
 #new sun completed
-data modify entity @e[type=magma_cube,limit=1,tag=new_sun_hitbox,tag=anni_immune,distance=..16] Size set value 0
-kill @e[type=magma_cube,tag=new_sun_hitbox,tag=anni_immune,distance=..16]
+data modify entity @e[type=magma_cube,limit=1,tag=new_sun_hitbox,tag=anni_immune,tag=anni_summoned,distance=..16] Size set value 0
+kill @e[type=magma_cube,tag=new_sun_hitbox,tag=anni_immune,tag=anni_summoned,distance=..16]
 playsound entity.generic.explode hostile @a[distance=..150] ~ ~ ~ 5 0
 particle explosion_emitter ~ ~ ~
 

@@ -34,10 +34,10 @@ execute if entity @e[type=item_display,tag=aj.annir_apocalpytic_sigil.root,limit
 #infernal subjugate
 execute if entity @e[type=end_crystal,distance=..128,tag=anni_immune,tag=anni_regen] run execute as @e[type=end_crystal,distance=..128,tag=anni_immune,tag=anni_regen] at @s run function annihilation:boss/effects/subjugate_heal
 #burning irise
-execute if entity @e[type=bat,distance=..128,tag=anni_immune,tag=eye_plat] run execute as @e[type=bat,distance=..128,tag=anni_immune,tag=eye_plat] at @s unless entity @e[type=skeleton,distance=..1,limit=1,sort=nearest,tag=anni_immune] run kill @s
+execute if entity @e[type=bat,distance=..128,tag=anni_immune,tag=eye_plat,tag=anni_summoned] run execute as @e[type=bat,distance=..128,tag=anni_immune,tag=eye_plat,tag=anni_summoned] at @s unless entity @e[type=skeleton,distance=..1,limit=1,sort=nearest,tag=anni_immune,tag=anni_summoned] run kill @s
 #new sun
-execute if score @s anniR_new_sun matches 1..2 run execute if entity @e[type=item_display,limit=1,tag=new_sun,tag=anni_immune,distance=..32] run execute as @e[type=item_display,limit=1,tag=new_sun,tag=anni_immune,distance=..32] at @s run function annihilation:boss/effects/new_sun_check
-execute if score @s anniR_new_sun matches 1..2 run execute if entity @e[type=magma_cube,limit=1,tag=!anni_hitbox,tag=!anni_immune,tag=!new_sun_hitbox,distance=..32,nbt={NoAI:1b}] run kill @e[type=magma_cube,limit=1,tag=!anni_hitbox,tag=!anni_immune,tag=!new_sun_hitbox,distance=..32,nbt={NoAI:1b}]
+execute if score @s anniR_new_sun matches 1..2 run execute if entity @e[type=item_display,limit=1,tag=new_sun,tag=anni_immune,tag=anni_summoned,distance=..32] run execute as @e[type=item_display,limit=1,tag=new_sun,tag=anni_immune,tag=anni_summoned,distance=..32] at @s run function annihilation:boss/effects/new_sun_check
+execute if score @s anniR_new_sun matches 1..2 run execute if entity @e[type=magma_cube,limit=1,tag=!anni_hitbox,tag=!anni_immune,tag=!new_sun_hitbox,tag=!anni_summoned,distance=..32,nbt={NoAI:1b}] run kill @e[type=magma_cube,limit=1,tag=!anni_hitbox,tag=!anni_immune,tag=!new_sun_hitbox,tag=!anni_summoned,distance=..32,nbt={NoAI:1b}]
 
 #check sigil (buff)
 execute unless score @s anniR_abilityCooldown matches 0 if score @s anniR_isBuffed matches 0 run data modify entity @e[type=item_display,tag=aj.annir_head.bone.sigil,limit=1,distance=..12,sort=nearest] item.id set value "minecraft:air"
