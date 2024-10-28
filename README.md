@@ -10,7 +10,7 @@
 > I only recreate the boss model/texture and attacks, the [music](https://www.youtube.com/watch?v=QiTEljrS05I) and the [structure](https://wynncraft.wiki.gg/wiki/Corruption_Portal) were directly taken from **Wynncraft**
 
 > [!NOTE]
-> this datapack require a RessourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/b1.7)
+> this datapack require a ResourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/b1.7)
 >
 > require [attributefix](https://modrinth.com/mod/attributefix) if you're ***not playing*** on ***vanilla difficulty*** in `/function annihilation:admin/_/set_config`
 > Or if you are challenging the boss with more than 3 players
@@ -60,3 +60,7 @@ The boss can change/attack target (player or mob) as long as it doesn't have the
 You can manually change target using `/execute as <entity> run function annihilation:set_target`
 
 Or `/tag <entity> add anni_target`, but make sure that there only 1 target
+
+
+
+- dev note: A lot of attack ; behavior ; and models are not 100% accurate since it's almost impossible and my only visual source where player soloing Annihilation.
