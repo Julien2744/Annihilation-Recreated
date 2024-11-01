@@ -2,8 +2,8 @@
   "pools": [
     {
       "rolls": {
-        "min": 19,
-        "max": 26
+        "min": 9,
+        "max": 16
       },
       "entries": [
         {
@@ -13,8 +13,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 30,
-                "max": 62
+                "min": 18,
+                "max": 32
               }
             }
           ]
@@ -23,20 +23,19 @@
     },
     {
       "rolls": {
-        "min": 8,
-        "max": 18
+        "min": 3,
+        "max": 9
       },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:emerald_block",
-          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 6,
-                "max": 12
+                "min": 3,
+                "max": 8
               }
             }
           ]

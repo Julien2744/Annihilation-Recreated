@@ -1,4 +1,5 @@
 scoreboard objectives add anniR_loadStructure dummy
+scoreboard objectives add anniR_checkMobSpawn dummy
 scoreboard objectives add anniR_structureTimer dummy
 
 scoreboard objectives add anniR_loadScoreboard dummy

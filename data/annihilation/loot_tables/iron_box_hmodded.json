@@ -1,7 +1,7 @@
 {
     "pools": [
       {
-        "rolls": 27,
+        "rolls": 8,
         "entries": [
           {
             "type": "minecraft:item",
@@ -10,8 +10,8 @@
               {
                 "function": "minecraft:set_count",
                 "count": {
-                  "min": 30,
-                  "max": 64
+                  "min": 14,
+                  "max": 32
                 }
               }
             ]

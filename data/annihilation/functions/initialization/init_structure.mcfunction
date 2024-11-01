@@ -7,7 +7,8 @@ execute if score #anniR_load anniR_structureTimer matches 1 run execute position
 execute if score #anniR_load anniR_structureTimer matches 1 run execute positioned 212 -37.5 -1291.05 run kill @e[type=text_display,tag=anni_item_count,distance=..8]
 
 #comment this line to disable structure generation
-execute if score #anniR_load anniR_structureTimer matches 2 run function annihilation:initialization/generate_structure
+execute if score #anniR_load anniR_structureTimer matches 2 run execute store result score #anniR_load anniR_checkMobSpawn run gamerule doMobSpawning
+execute if score #anniR_load anniR_structureTimer matches 2 if score #anniR_load anniR_checkMobSpawn matches 1 run function annihilation:initialization/generate_structure
 
 #put the boss summoner
 execute if score #anniR_load anniR_structureTimer matches 24 run function annihilation:boss_summoner/summon

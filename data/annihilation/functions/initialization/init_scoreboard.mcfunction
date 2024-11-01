@@ -64,7 +64,7 @@ scoreboard players set #anniR_global anniR_difficulty 0
 scoreboard players set #anniR_global anniR_onlyTrophy 0
 scoreboard players set #anniR_global anniR_music 1
 scoreboard players set #anniR_global anniR_team 0
-scoreboard players set #anniR_global anniR_newsun_kill 1
+scoreboard players set #anniR_global anniR_newsun_kill 0
 scoreboard players set #anniR_global anniR_newsun_grief 0
 #math
 scoreboard players set #anniR_global anniR_newsun_div 20

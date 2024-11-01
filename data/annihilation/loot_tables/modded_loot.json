@@ -1,51 +1,47 @@
 {
   "pools": [
     {
-      "rolls": 30,
+      "rolls": 22,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_block",
-          "weight": 3,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 8
+                "min": 1,
+                "max": 3
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:yellow_shulker_box",
-          "weight": 5,
+          "name": "minecraft:gold_block",
+          "weight": 4,
           "functions": [
             {
-              "function": "minecraft:set_loot_table",
-              "type": "minecraft:shulker_box",
-              "name": "annihilation:gold_box_modded"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"gold box\",\"color\":\"gold\",\"italic\":false}'}}"
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 18,
+                "max": 30
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:white_shulker_box",
-          "weight": 5,
+          "name": "minecraft:iron_block",
+          "weight": 4,
           "functions": [
             {
-              "function": "minecraft:set_loot_table",
-              "type": "minecraft:shulker_box",
-              "name": "annihilation:iron_box_modded"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"iron box\",\"color\":\"white\",\"italic\":false}'}}"
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 21,
+                "max": 42
+              }
             }
           ]
         },
@@ -57,8 +53,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 28,
-                "max": 42
+                "min": 4,
+                "max": 10
               }
             }
           ]
@@ -66,7 +62,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:red_shulker_box",
-          "weight": 5,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -82,7 +78,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lime_shulker_box",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -112,8 +108,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 6,
-                "max": 9
+                "min": 2,
+                "max": 5
               }
             }
           ]
@@ -135,8 +131,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4,
-                "max": 8
+                "min": 2,
+                "max": 4
               }
             }
           ]
@@ -144,7 +140,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chest",
-          "weight": 3,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -158,8 +154,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 6,
-                "max": 12
+                "min": 3,
+                "max": 7
               }
             }
           ]
@@ -167,7 +163,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chest",
-          "weight": 6,
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -190,7 +186,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chest",
-          "weight": 6,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_loot_table",
@@ -204,8 +200,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4,
-                "max": 8
+                "min": 2,
+                "max": 6
               }
             }
           ]
