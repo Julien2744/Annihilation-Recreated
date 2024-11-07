@@ -10,7 +10,7 @@
 > I only recreate the boss model/texture and attacks, the [music](https://www.youtube.com/watch?v=QiTEljrS05I) and the [structure](https://wynncraft.wiki.gg/wiki/Corruption_Portal) were directly taken from **Wynncraft**
 
 > [!NOTE]
-> this datapack require a ResourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/b1.8)
+> this datapack require a ResourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/b2.0)
 >
 > require [attributefix](https://modrinth.com/mod/attributefix) if you're ***not playing*** on ***vanilla difficulty*** in `/function annihilation:admin/_/set_config`
 > Or if you are challenging the boss with more than 3 players
@@ -18,6 +18,9 @@
 > Current version work for `Minecraft 1.20.1`
 
 All animations in this datapack where made using [Animated Java](https://animated-java.dev/)
+
+The `animated_java` files are not included due to how many there are (1670+ files), and because the file are 99% models and animations.
+You can found them on the [modrinth](https://modrinth.com/datapack/annihilation-recreated/) page where you can download the datapack
 
 ## features
 
