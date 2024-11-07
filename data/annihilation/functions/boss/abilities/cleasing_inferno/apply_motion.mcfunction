@@ -7,7 +7,7 @@ execute as @e[type=arrow,tag=anni_projectile,distance=..16,nbt={Fire:120s}] posi
 execute positioned 0 0 0 run kill @e[type=armor_stand,tag=anni_aim,distance=..2]
 
 #short
-execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=8..18] run execute as @e[type=arrow,tag=anni_projectile,distance=..16,nbt={Fire:120s}] run function annihilation:boss/abilities/cleasing_inferno/motion/short
+execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=6.5..18] run execute as @e[type=arrow,tag=anni_projectile,distance=..16,nbt={Fire:120s}] run function annihilation:boss/abilities/cleasing_inferno/motion/short
 
 #brige
 execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=22..38] run execute as @e[type=arrow,tag=anni_projectile,distance=..16,nbt={Fire:120s}] run function annihilation:boss/abilities/cleasing_inferno/motion/bridge

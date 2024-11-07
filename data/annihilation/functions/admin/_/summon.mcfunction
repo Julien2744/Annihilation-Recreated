@@ -6,7 +6,7 @@ execute if score #anniR_global anniR_visibleHitbox matches 1 run data modify ent
 
 #model
 execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] rotated -90 0 run function animated_java:annihilation_recreated/summon
-execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] rotated -90 0 run execute positioned ~ ~9.3125 ~ run function animated_java:annir_head/summon
+execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] rotated -90 25 run execute positioned ~ ~9.3125 ~ run function animated_java:annir_head/summon
 execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] run function annihilation:boss/looking_head
 execute as @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] run ride @s mount @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,distance=..2,sort=nearest]
 data modify entity @e[type=item_display,tag=aj.annir_head.bone.sigil,limit=1,distance=..32,sort=nearest] item.id set value "minecraft:air"

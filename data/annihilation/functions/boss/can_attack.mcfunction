@@ -9,8 +9,11 @@ execute if score @s anniR_health_pour matches ..20 run execute if score @s anniR
 execute unless score @s anniR_buffedCount matches 2 run execute if score @s anniR_isBuffed matches 0 if score @s anniR_health_pour matches 52..65 if score @s anniR_abilityCooldown matches 0 run function annihilation:boss/abilities/stoke_the_blaze
 execute unless score @s anniR_buffedCount matches 2 run execute if score @s anniR_isBuffed matches 0 if score @s anniR_health_pour matches 25..43 if score @s anniR_abilityCooldown matches 0 run function annihilation:boss/abilities/stoke_the_blaze
 
+#cleasing inferno (short)
+execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=6.5..18] if predicate annihilation:random_35 run function annihilation:boss/abilities/cleasing_inferno/begin
+
 #apocalpytic_sigil
-execute if score @s anniR_abilityCooldown matches 0 run execute run execute unless entity @e[type=item_display,tag=aj.annir_apocalpytic_sigil.root,limit=1,distance=..128] if predicate annihilation:random_35 run function animated_java:annihilation_recreated/animations/apocalpytic_sigil/play
+execute if score @s anniR_abilityCooldown matches 0 run execute run execute unless entity @e[type=item_display,tag=aj.annir_apocalpytic_sigil.root,limit=1,distance=..128] if predicate annihilation:random_30 run function animated_java:annihilation_recreated/animations/apocalpytic_sigil/play
 
 #secare
 execute if score @s anniR_health_pour matches ..30 run execute if score @s anniR_abilityCooldown matches 0 positioned ^ ^ ^3 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..8] unless predicate annihilation:random_25 run function animated_java:annihilation_recreated/animations/secare/play
@@ -24,10 +27,9 @@ execute if score @s anniR_health_pour matches ..60 run execute if score @s anniR
 #cauterize_messes
 execute if score @s anniR_health_pour matches ..80 run execute if score @s anniR_abilityCooldown matches 0 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..128] if predicate annihilation:random_30 run function animated_java:annihilation_recreated/animations/cauterize_messes/play
 
-#cleasing inferno
-execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=8..18] if predicate annihilation:random_35 run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,sort=nearest] at @s run function animated_java:annir_head/animations/cleasing_inferno/play
-execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=22..38] if predicate annihilation:random_35 run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,sort=nearest] at @s run function animated_java:annir_head/animations/cleasing_inferno/play
-execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=56..80] if predicate annihilation:random_35 run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,sort=nearest] at @s run function animated_java:annir_head/animations/cleasing_inferno/play
+#cleasing inferno (bridge / long)
+execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=22..38] if predicate annihilation:random_35 run function annihilation:boss/abilities/cleasing_inferno/begin
+execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=56..80] if predicate annihilation:random_35 run function annihilation:boss/abilities/cleasing_inferno/begin
 
 #exhort
 execute if score @s anniR_abilityCooldown matches ..20 if score @s anni_pitch matches -90..-30 run execute positioned ^ ^16 ^6 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..10] run execute as @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=..20,limit=1,sort=nearest] run function annihilation:boss/abilities/exhort

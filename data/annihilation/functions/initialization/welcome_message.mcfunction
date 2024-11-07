@@ -1,4 +1,4 @@
-tellraw @a {"text":"Annihilation Recreated beta1.8 loaded","color":"dark_red","bold":false}
+tellraw @a {"text":"Annihilation Recreated beta2.0 loaded","color":"dark_red","bold":false}
 tellraw @a {"text":" "}
 tellraw @a [{"text":" datapack page: ","color":"gray","bold":false,"italic":false},{"text":"modrinth.com/datapack/annihilation-recreated","color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/annihilation-recreated"}}]
 tellraw @a {"text":" (don't forget to check if you have the resource pack active)","color":"gray"}

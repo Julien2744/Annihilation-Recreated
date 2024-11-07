@@ -1,2 +1,2 @@
 scoreboard players set #anniR_global anniR_difficulty 2
-function annihilation:admin/_/set_config
+execute if entity @s[type=player] run function annihilation:admin/_/set_config

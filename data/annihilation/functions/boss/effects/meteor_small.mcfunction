@@ -21,3 +21,4 @@ execute unless score @s anniR_isBuffed matches 0 run execute if score #anniR_glo
 execute unless score @s anniR_isBuffed matches 0 run execute if score #anniR_global anniR_difficulty matches 2 run damage @e[distance=..3.25,tag=!anni_immune,tag=!anni_target,limit=1,sort=random] 45 annihilation:metor_small by @s
 
 kill @e[type=armor_stand,tag=anni_meteor_s,distance=..1,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=anni_meteor_s2,distance=..1,limit=1,sort=nearest]

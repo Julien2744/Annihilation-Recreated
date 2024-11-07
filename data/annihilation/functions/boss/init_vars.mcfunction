@@ -8,6 +8,7 @@ scoreboard players add @s anniR_deathCooldown 0
 scoreboard players add @s anniR_isBuffed 0
 scoreboard players add @s anniR_buffedCount 0
 scoreboard players add @s anniR_abilityCooldown 120
+scoreboard players add @s anniR_cleasingAnim 0
 scoreboard players add @s anniR_health_pour 100
 scoreboard players add @s anniR_health 800
 scoreboard players add @s anniR_new_sun 0

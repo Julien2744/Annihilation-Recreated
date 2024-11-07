@@ -22,7 +22,7 @@ execute positioned 212 -39 -1292 run function annihilation:admin/_/summon
 execute positioned 212 -39 -1292 run scoreboard players set @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] anniR_struct_spawned 1
 execute positioned 212 -39 -1292 run execute at @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] run function annihilation:boss/anim_head
 execute positioned 212 -39 -1292 run execute as @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] at @s run function animated_java:annihilation_recreated/animations/entrance/play
-execute positioned 212 -39 -1292 run effect give @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] resistance 5 3 false
+execute positioned 212 -39 -1292 run effect give @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] resistance 5 3 true
 
 #sound
 execute positioned 212 -39 -1292 run playsound minecraft:entity.warden.emerge hostile @a[distance=..90] ~ ~ ~ 10

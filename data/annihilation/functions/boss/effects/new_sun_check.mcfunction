@@ -14,7 +14,6 @@ execute if score @s anniR_newsun_comp matches 300.. run function annihilation:bo
 
 #new sun destroyed
 execute if entity @e[type=magma_cube,tag=!anni_hitbox,tag=!anni_immune,tag=!new_sun_hitbox,tag=!anni_summoned,distance=..16,nbt={NoAI:1b}] run execute as @e[type=magma_cube,tag=!anni_hitbox,tag=!anni_immune,tag=!new_sun_hitbox,tag=!anni_summoned,distance=..16,nbt={NoAI:1b}] run data modify entity @s Size set value 0
-#execute unless entity @e[type=magma_cube,limit=1,tag=new_sun_hitbox,tag=anni_immune,distance=..16] unless score @s anniR_newsun_comp matches 200.. run say yipee
 
 #kill entity
 execute if entity @e[type=magma_cube,tag=!anni_hitbox,tag=!anni_immune,tag=!new_sun_hitbox,tag=!anni_summoned,distance=..16,nbt={NoAI:1b,Size:0}] run kill @e[type=magma_cube,tag=!anni_hitbox,tag=!anni_immune,tag=!anni_summoned,distance=..16,nbt={NoAI:1b}]

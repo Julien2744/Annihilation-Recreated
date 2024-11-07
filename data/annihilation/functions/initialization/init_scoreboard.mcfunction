@@ -36,6 +36,8 @@ scoreboard objectives add anniR_playerCount dummy
 scoreboard objectives add anniR_abilityCooldown dummy
 #0: false ; 1: true (only for the aj.annir_head.root)
 #scoreboard objectives add anniR_stopTracking dummy
+#0: isn't playing/long ; 1: short ; 2: bridge
+scoreboard objectives add anniR_cleasingAnim dummy
 scoreboard objectives add anniR_health_pour dummy
 scoreboard objectives add anniR_health dummy
 scoreboard objectives add anni_motX dummy
@@ -76,7 +78,7 @@ team modify annihilation_team friendlyFire false
 team modify annihilation_team seeFriendlyInvisibles false
 
 ## scoreboard version ##
-scoreboard players set #anniR_load anniR_scoreboardVersion 3
+scoreboard players set #anniR_load anniR_scoreboardVersion 4
 
 #end of initialisating
 scoreboard players set #anniR_load anniR_loadScoreboard 1

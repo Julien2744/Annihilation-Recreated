@@ -12,8 +12,8 @@ execute store result bossbar annihilation_bossbar value run scoreboard players g
 bossbar set annihilation_bossbar name [{"text":"Annihilation","color":"red"},{"text":" - ","color":"gray"},{"score":{"name":"@s","objective":"anniR_health"},"color":"red"},{"text":"❤","color":"dark_red"}]
 
 #face target
-execute if entity @e[tag=anni_target,distance=..128,limit=1] run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ facing entity @e[tag=anni_target,distance=..128,limit=1]
-execute if entity @e[tag=anni_target,distance=..128,limit=1] run execute store result score @s anni_pitch run data get entity @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] Rotation[1]
+execute if entity @e[tag=anni_target,distance=..128,limit=1] run execute if score @s anniR_cleasingAnim matches 0 as @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ facing entity @e[tag=anni_target,distance=..128,limit=1]
+execute if entity @e[tag=anni_target,distance=..128,limit=1] run execute if score @s anniR_cleasingAnim matches 0 store result score @s anni_pitch run data get entity @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] Rotation[1]
 #execute unless entity @e[tag=anni_target,distance=..128,limit=1] run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ -90 32
 
 #check if the boss died
@@ -27,6 +27,11 @@ execute unless score @s anniR_isBuffed matches 0 if entity @e[type=magma_cube,nb
 #execute ability
 execute if entity @e[tag=anni_target,distance=..128,limit=1] if entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},distance=..8,limit=1,sort=nearest] if score @s anniR_abilityCooldown matches 0 run function annihilation:boss/can_attack
 #check ability
+#cleasing inferno
+#short
+execute if score @s anniR_cleasingAnim matches 1 run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ ~-1.75 ~
+#bridge
+execute if score @s anniR_cleasingAnim matches 2 run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ ~ ~-0.95
 #meteor
 execute as @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=..8,limit=1,sort=nearest] unless score @s anniR_abilityCooldown matches 0 run function annihilation:boss/effects/check_meteor
 #red_ring
