@@ -1,2 +1,0 @@
-execute if score @s aj.anim_time matches 46 run function animated_java:annihilation_recreated/zzzzzzzz/animations/rake/tree/leaf_46
-execute if score @s aj.anim_time matches 47 run function animated_java:annihilation_recreated/zzzzzzzz/animations/rake/tree/leaf_47

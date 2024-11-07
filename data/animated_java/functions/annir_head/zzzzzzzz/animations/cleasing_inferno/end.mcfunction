@@ -1,3 +1,0 @@
-execute if score @s aj.annir_head.animation.cleasing_inferno.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:annir_head/zzzzzzzz/animations/cleasing_inferno/end_loop
-execute if score @s aj.annir_head.animation.cleasing_inferno.loop_mode = $aj.loop_mode.once aj.i run function animated_java:annir_head/animations/cleasing_inferno/stop
-execute if score @s aj.annir_head.animation.cleasing_inferno.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:annir_head/animations/cleasing_inferno/pause

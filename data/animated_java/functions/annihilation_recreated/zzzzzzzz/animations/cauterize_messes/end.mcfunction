@@ -1,3 +1,0 @@
-execute if score @s aj.annihilation_recreated.animation.cauterize_messes.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:annihilation_recreated/zzzzzzzz/animations/cauterize_messes/end_loop
-execute if score @s aj.annihilation_recreated.animation.cauterize_messes.loop_mode = $aj.loop_mode.once aj.i run function animated_java:annihilation_recreated/animations/cauterize_messes/stop
-execute if score @s aj.annihilation_recreated.animation.cauterize_messes.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:annihilation_recreated/animations/cauterize_messes/pause

@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:annihilation_recreated/zzzzzzzz/animations/new_sun/tree/leaf_16_as_bone
-execute unless entity @s[tag=aj.annihilation_recreated.disable_command_keyframes] at @s run execute positioned ^ ^16 ^16 run function annihilation:boss/abilities/new_sun

@@ -1,3 +1,0 @@
-execute if score @s aj.annihilation_recreated.animation.rake.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:annihilation_recreated/zzzzzzzz/animations/rake/end_loop
-execute if score @s aj.annihilation_recreated.animation.rake.loop_mode = $aj.loop_mode.once aj.i run function animated_java:annihilation_recreated/animations/rake/stop
-execute if score @s aj.annihilation_recreated.animation.rake.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:annihilation_recreated/animations/rake/pause

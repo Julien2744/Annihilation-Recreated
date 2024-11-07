@@ -1,3 +1,0 @@
-execute if score @s aj.annihilation_recreated.animation.blossoming_chaos.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:annihilation_recreated/zzzzzzzz/animations/blossoming_chaos/end_loop
-execute if score @s aj.annihilation_recreated.animation.blossoming_chaos.loop_mode = $aj.loop_mode.once aj.i run function animated_java:annihilation_recreated/animations/blossoming_chaos/stop
-execute if score @s aj.annihilation_recreated.animation.blossoming_chaos.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:annihilation_recreated/animations/blossoming_chaos/pause

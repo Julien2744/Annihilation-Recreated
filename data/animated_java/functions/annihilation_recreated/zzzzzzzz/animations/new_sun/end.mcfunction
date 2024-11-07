@@ -1,3 +1,0 @@
-execute if score @s aj.annihilation_recreated.animation.new_sun.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:annihilation_recreated/zzzzzzzz/animations/new_sun/end_loop
-execute if score @s aj.annihilation_recreated.animation.new_sun.loop_mode = $aj.loop_mode.once aj.i run function animated_java:annihilation_recreated/animations/new_sun/stop
-execute if score @s aj.annihilation_recreated.animation.new_sun.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:annihilation_recreated/animations/new_sun/pause

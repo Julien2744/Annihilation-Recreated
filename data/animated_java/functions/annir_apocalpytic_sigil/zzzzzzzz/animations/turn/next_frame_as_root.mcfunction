@@ -1,1 +1,0 @@
-function animated_java:annir_apocalpytic_sigil/zzzzzzzz/animations/turn/tick_animation

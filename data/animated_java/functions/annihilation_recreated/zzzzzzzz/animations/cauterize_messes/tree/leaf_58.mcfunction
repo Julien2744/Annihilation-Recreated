@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:annihilation_recreated/zzzzzzzz/animations/cauterize_messes/tree/leaf_58_as_bone

@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.annir_apocalpytic_sigil.bone.red_ring] run data modify entity @s {} merge value {transformation:[-2.1573786516665265f,0f,-1.567427339446595f,0f,0f,2.6666666666666665f,0f,0f,1.567427339446595f,0f,-2.1573786516665265f,0f,0f,0f,0f,1f],start_interpolation:0}

@@ -1,1 +1,0 @@
-function animated_java:annihilation_recreated/zzzzzzzz/animations/eyes_of_war/tick_animation

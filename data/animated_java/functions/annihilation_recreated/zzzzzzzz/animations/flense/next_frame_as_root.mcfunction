@@ -1,1 +1,0 @@
-function animated_java:annihilation_recreated/zzzzzzzz/animations/flense/tick_animation

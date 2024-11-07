@@ -1,2 +1,0 @@
-execute if score @s aj.anim_time matches 0 run function animated_java:annir_apocalpytic_sigil/zzzzzzzz/animations/attack/tree/leaf_0
-execute if score @s aj.anim_time matches 30 run function animated_java:annir_apocalpytic_sigil/zzzzzzzz/animations/attack/tree/leaf_30

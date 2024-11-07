@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:annihilation_recreated/zzzzzzzz/animations/flense/tree/leaf_10_as_bone

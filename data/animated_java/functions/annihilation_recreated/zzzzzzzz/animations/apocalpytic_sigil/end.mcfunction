@@ -1,3 +1,0 @@
-execute if score @s aj.annihilation_recreated.animation.apocalpytic_sigil.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:annihilation_recreated/zzzzzzzz/animations/apocalpytic_sigil/end_loop
-execute if score @s aj.annihilation_recreated.animation.apocalpytic_sigil.loop_mode = $aj.loop_mode.once aj.i run function animated_java:annihilation_recreated/animations/apocalpytic_sigil/stop
-execute if score @s aj.annihilation_recreated.animation.apocalpytic_sigil.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:annihilation_recreated/animations/apocalpytic_sigil/pause

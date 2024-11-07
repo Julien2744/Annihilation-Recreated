@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.annir_head.animation.cleasing_inferno] run function animated_java:annir_head/zzzzzzzz/animations/cleasing_inferno/tick

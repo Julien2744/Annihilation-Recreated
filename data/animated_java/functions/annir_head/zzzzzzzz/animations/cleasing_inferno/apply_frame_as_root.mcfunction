@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..72 run function animated_java:annir_head/zzzzzzzz/animations/cleasing_inferno/tree/branch_0_72

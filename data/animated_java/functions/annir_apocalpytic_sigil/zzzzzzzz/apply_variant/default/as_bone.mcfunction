@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.annir_apocalpytic_sigil.bone.red_ring] run data modify entity @s item.tag.CustomModelData set value 34
-execute if entity @s[tag=aj.annir_apocalpytic_sigil.bone.beam] run data modify entity @s item.tag.CustomModelData set value 35
