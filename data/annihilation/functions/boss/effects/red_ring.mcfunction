@@ -6,7 +6,7 @@ execute if entity @s[tag=follow] unless score @s anniR_as_turn matches 4 run exe
 execute unless score @s[tag=follow] anniR_as_turn matches 0.. run function animated_java:annir_apocalpytic_sigil/remove/this
 
 #sound
-execute if score @s anniR_as_turn matches 5 if entity @s[tag=attack] run playsound item.trident.thunder hostile @a[distance=..24] ~ ~ ~ 8
+execute if score @s anniR_as_turn matches 5 if entity @s[tag=attack] run playsound minecraft:entity.lightning_bolt.thunder hostile @a[distance=..24] ~ ~ ~ 8 2
 execute if entity @s[tag=attack] run scoreboard players reset @s anniR_as_turn
 
 #damage

@@ -1,5 +1,5 @@
 particle explosion_emitter ~ ~ ~
-playsound entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 1 0.5
+playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 3 0.5
 
 summon armor_stand ~ ~ ~0.75 {Motion:[0.0,0.75,0.75],NoGravity:0b,Invulnerable:1b,HasVisualFire:1b,Glowing:0b,Invisible:1b,Tags:["anni_immune","anni_meteor","anni_meteor_s2","anni_summoned"],Pose:{Head:[180f,0f,0f]},DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:magma_block",Count:1b}]}
 summon armor_stand ~-0.5 ~ ~-0.5 {Motion:[-0.5,0.75,-0.5],NoGravity:0b,Invulnerable:1b,HasVisualFire:1b,Glowing:0b,Invisible:1b,Tags:["anni_immune","anni_meteor","anni_meteor_s2","anni_summoned"],Pose:{Head:[180f,0f,0f]},DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:magma_block",Count:1b}]}

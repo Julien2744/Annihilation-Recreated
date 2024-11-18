@@ -25,7 +25,7 @@ execute if score @s anniR_health_pour matches 31.. run execute if score @s anniR
 #cauterize_them_all
 execute if score @s anniR_health_pour matches ..60 run execute if score @s anniR_abilityCooldown matches 0 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=11.5..128] if predicate annihilation:random_25 run function animated_java:annihilation_recreated/animations/cauterize_them_all/play
 #cauterize_messes
-execute if score @s anniR_health_pour matches ..80 run execute if score @s anniR_abilityCooldown matches 0 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..128] if predicate annihilation:random_30 run function animated_java:annihilation_recreated/animations/cauterize_messes/play
+execute if score @s anniR_health_pour matches ..80 run execute if score @s anniR_abilityCooldown matches 0 if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=9.5..128] if predicate annihilation:random_30 run function animated_java:annihilation_recreated/animations/cauterize_messes/play
 
 #cleasing inferno (bridge / long)
 execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=22..38] if predicate annihilation:random_35 run function annihilation:boss/abilities/cleasing_inferno/begin

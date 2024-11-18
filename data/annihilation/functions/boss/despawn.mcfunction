@@ -33,7 +33,7 @@ bossbar remove annihilation_newsun_comp
 function annihilation:boss_summoner/summon
 
 #announce defeat
-playsound minecraft:entity.lightning_bolt.thunder hostile @a[distance=..128] ~ ~ ~ 12
+playsound minecraft:item.trident.thunder hostile @a[distance=..128] ~ ~ ~ 12 0
 tellraw @a [{"text":"There were no players left to defeat ","color":"gray"},{"text":"Annihilation","color":"dark_red"},{"text":"...","color":"gray"}]
 
 execute at @a run stopsound @p record annihilation_recreated:annihilation_by_texilated
@@ -43,3 +43,6 @@ schedule function annihilation:boss/play_music 3s
 data modify entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] Size set value 0
 kill @e[type=magma_cube,nbt={NoAI:1b,Size:0},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest]
 function animated_java:annihilation_recreated/remove/this
+
+#check if there any more anni
+execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1] run scoreboard players set #anniR_global anniR_spawned 0

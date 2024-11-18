@@ -15,3 +15,6 @@ function animated_java:annihilation_recreated/remove/this
 execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] run bossbar remove annihilation_bossbar
 execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] run bossbar remove annihilation_newsun_comp
 execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1,sort=nearest] run tag @e[tag=anni_target,distance=..128,limit=1] remove anni_target
+
+#check if there any more anni
+execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1] run scoreboard players set #anniR_global anniR_spawned 0

@@ -1,5 +1,7 @@
 #global
 #annihilation
+#0: false ; 1: true
+scoreboard objectives add anniR_spawned dummy
 scoreboard objectives add anniR_visibleHitbox dummy
 #0: off(no-instakill) ; 1: on(instakill)
 scoreboard objectives add anniR_newsun_kill dummy
@@ -28,7 +30,8 @@ scoreboard objectives add anniR_newsun_div dummy
 #annihilation
 #0: false ; 1: true
 scoreboard objectives add anniR_struct_spawned dummy
-scoreboard objectives add anniR_deathCooldown dummy
+#0: false ; 1: true
+scoreboard objectives add anniR_death dummy
 #0: isn't ; number of ability buffed (decrease)
 scoreboard objectives add anniR_isBuffed dummy
 scoreboard objectives add anniR_buffedCount dummy
@@ -59,6 +62,7 @@ scoreboard objectives add anniR_newsun_size dummy
 
 #initialize (only for global)
 #annihilation
+scoreboard players set #anniR_global anniR_spawned 0
 scoreboard players set #anniR_global anniR_visibleHitbox 0
 scoreboard players set #anniR_global anniR_boss_summoner 0
 #config
@@ -76,9 +80,10 @@ team add annihilation_team
 team modify annihilation_team color dark_red
 team modify annihilation_team friendlyFire false
 team modify annihilation_team seeFriendlyInvisibles false
+team modify annihilation_team collisionRule pushOtherTeams
 
 ## scoreboard version ##
-scoreboard players set #anniR_load anniR_scoreboardVersion 4
+scoreboard players set #anniR_load anniR_scoreboardVersion 5
 
 #end of initialisating
 scoreboard players set #anniR_load anniR_loadScoreboard 1

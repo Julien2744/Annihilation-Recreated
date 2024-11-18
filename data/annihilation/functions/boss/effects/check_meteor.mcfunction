@@ -9,4 +9,4 @@ execute at @e[type=armor_stand,tag=anni_meteor_b,tag=anni_summoned,distance=..12
 execute at @e[type=armor_stand,tag=anni_meteor_s2,tag=anni_summoned,distance=..128,nbt={OnGround:1b}] run function annihilation:boss/effects/meteor_small
 
 #out of range meteor
-execute as @e[type=armor_stand,tag=anni_meteor,tag=anni_summoned,distance=128..512] at @s run kill @s
+execute as @e[type=armor_stand,tag=anni_meteor,tag=anni_summoned,distance=128..130] at @s run kill @s
