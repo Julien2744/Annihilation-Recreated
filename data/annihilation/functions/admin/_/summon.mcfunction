@@ -1,7 +1,7 @@
 #root nbt   CustomName:'{"text":"Annihilation","color":"dark_red"}',Tags:["anni_body","anni_immune"]
 
 #hitbox
-summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,CustomNameVisible:0b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Health:800f,Size:16,Tags:["anni_hitbox","anni_immune","ps-mob","mobvariants.blacklist","in.checked"],CustomName:'{"text":"Annihilation","color":"dark_red"}',ActiveEffects:[{Id:12,Amplifier:5b,Duration:-1,ShowParticles:0b},{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:800},{Name:generic.armor,Base:10}],HandItems:[{id:"minecraft:wooden_axe",Count:1b,tag:{Unbreakable:1b}},{}],HandDropChances:[0.000F,0.085F]}
+summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,CustomNameVisible:0b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Health:800f,Size:16,Tags:["anni_hitbox","anni_immune","ps-mob","mobvariants.blacklist","in.checked"],CustomName:'{"text":"Annihilation","color":"dark_red"}',active_effects:[{id:"minecraft:fire_resistance",amplifier:5b,duration:-1,show_particles:0b},{id:"minecraft:invisibility",amplifier:1b,duration:-1,show_particles:0b}],Attributes:[{Name:generic.max_health,Base:800},{Name:generic.armor,Base:10}],HandItems:[{id:"minecraft:wooden_axe",Count:1b,tag:{Unbreakable:1b}},{}],HandDropChances:[0.000F,0.085F]}
 execute if score #anniR_global anniR_visibleHitbox matches 1 run data modify entity @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] Glowing set value 1b
 
 #model
