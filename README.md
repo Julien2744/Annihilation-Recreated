@@ -15,7 +15,7 @@
 > require [attributefix](https://modrinth.com/mod/attributefix) if you're ***not playing*** on ***vanilla difficulty*** in `/function annihilation:admin/_/set_config`
 > Or if you are challenging the boss with more than 3 players
 > 
-> Current version work for `Minecraft 1.20.1`
+> Current version work for `Minecraft 1.20.2` `1.20.3` `1.20.4`
 
 All animations in this datapack where made using [Animated Java](https://animated-java.dev/)
 
