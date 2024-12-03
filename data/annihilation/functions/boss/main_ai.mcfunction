@@ -22,7 +22,7 @@ execute if score @s anniR_death matches 0 if score @s anniR_despawn matches 0 ru
 #attack/ability
 #cooldown
 execute if entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=..8,limit=1,sort=nearest] unless score @s anniR_abilityCooldown matches 0 run scoreboard players remove @s anniR_abilityCooldown 1
-execute unless score @s anniR_isBuffed matches 0 if entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=..8,limit=1,sort=nearest] unless score @s anniR_abilityCooldown matches 0 if predicate annihilation:random_15 run scoreboard players remove @s anniR_abilityCooldown 1
+execute unless score @s anniR_isBuffed matches 0 if entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=..8,limit=1,sort=nearest] unless score @s anniR_abilityCooldown matches 0 if predicate annihilation:random_8 run scoreboard players remove @s anniR_abilityCooldown 1
 
 #execute ability
 execute if entity @e[tag=anni_target,distance=..128,limit=1] if entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},distance=..8,limit=1,sort=nearest] if score @s anniR_abilityCooldown matches 0 run function annihilation:boss/can_attack
