@@ -1,7 +1,7 @@
 #root nbt   CustomName:'{"text":"Annihilation","color":"dark_red"}',Tags:["anni_body","anni_immune"]
 
 #hitbox
-summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,CustomNameVisible:0b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Health:800f,Size:16,Tags:["anni_hitbox","anni_immune","ps-mob","mobvariants.blacklist","in.checked"],CustomName:'{"text":"Annihilation","color":"dark_red"}',ActiveEffects:[{Id:12,Amplifier:5b,Duration:-1,ShowParticles:0b},{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:800},{Name:generic.armor,Base:10}],HandItems:[{id:"minecraft:wooden_axe",Count:1b,tag:{Unbreakable:1b}},{}],HandDropChances:[0.000F,0.085F]}
+summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,CustomNameVisible:0b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Health:800f,Size:16,Tags:["anni_hitbox","anni_immune","ps-mob","mobvariants.blacklist","in.checked"],CustomName:'{"text":"Annihilation","color":"dark_red"}',ActiveEffects:[{Id:12,Amplifier:5b,Duration:-1,ShowParticles:0b},{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:800},{Name:generic.armor,Base:10},{Name:generic.armor_toughness,Base:2}],HandItems:[{id:"minecraft:wooden_axe",Count:1b,tag:{Unbreakable:1b}},{}],HandDropChances:[0.000F,0.085F]}
 execute if score #anniR_global anniR_visibleHitbox matches 1 run data modify entity @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] Glowing set value 1b
 
 #model
@@ -25,8 +25,8 @@ execute if score #anniR_global anniR_team matches 1 run team join annihilation_t
 execute as @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..2,limit=1] at @s run function annihilation:boss/init_vars
 
 #change data due to difficulty
-execute if score #anniR_global anniR_difficulty matches 1 run data merge entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,sort=nearest,distance=..2] {Health:2500,Attributes:[{Name:generic.max_health,Base:2500},{Name:generic.armor,Base:15}]}
-execute if score #anniR_global anniR_difficulty matches 2 run data merge entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,sort=nearest,distance=..2] {Health:8000,Attributes:[{Name:generic.max_health,Base:8000},{Name:generic.armor,Base:20}]}
+execute if score #anniR_global anniR_difficulty matches 1 run data merge entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,sort=nearest,distance=..2] {Health:2500,Attributes:[{Name:generic.max_health,Base:2500},{Name:generic.armor,Base:15},{Name:generic.armor_toughness,Base:5}]}
+execute if score #anniR_global anniR_difficulty matches 2 run data merge entity @e[type=magma_cube,tag=anni_hitbox,nbt={NoAI:1b},limit=1,sort=nearest,distance=..2] {Health:8000,Attributes:[{Name:generic.max_health,Base:8000},{Name:generic.armor,Base:20},{Name:generic.armor_toughness,Base:7}]}
 
 #change health depanding of the number of player
 execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..2,limit=1] anniR_playerCount matches 2.. run execute as @e[type=magma_cube,tag=anni_hitbox,limit=1,distance=..2] at @s run function annihilation:boss/health_scale

@@ -3,8 +3,15 @@
 #execute commands if the boss has taken damage
 execute as @e[type=magma_cube,nbt={NoAI:1b,Size:16,HurtTime:9s},distance=..8,limit=1,sort=nearest] as @s run function annihilation:boss/hurt
 
-#make the head stuck the the model
+#auto-target using the hitbox minecraft target
+execute unless entity @e[tag=anni_target,distance=..128] run execute as @e[type=magma_cube,nbt={NoAI:1b,Size:16},distance=..8,limit=1,sort=nearest] at @s on target run function annihilation:set_target
+
+#make the head stuck to the the model
 execute if entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,distance=..8,limit=1,sort=nearest] run execute positioned ~ ~9.3125 ~ unless entity @e[type=item_display,tag=aj.annir_head.root,distance=..0.25,limit=1,sort=nearest] run tp @e[type=item_display,tag=aj.annir_head.root,distance=..128,limit=1,sort=nearest] ~ ~ ~
+
+#check if the boss died
+execute if score @s anniR_death matches 0 if score @s anniR_despawn matches 0 if score @s anniR_health matches 0 run schedule function annihilation:boss/death/check_death 2
+execute if score @s anniR_death matches 0 if score @s anniR_despawn matches 0 if score @s anniR_health matches 0 run scoreboard players set @s anniR_death 1
 
 #refresh boss health bar (excluded from hurt because of regen and not updated when the boss die)
 execute store result score @s anniR_health run data get entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] Health
@@ -15,9 +22,6 @@ bossbar set annihilation_bossbar name [{"text":"Annihilation","color":"red"},{"t
 execute if entity @e[tag=anni_target,distance=..128,limit=1] run execute if score @s anniR_cleasingAnim matches 0 as @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ facing entity @e[tag=anni_target,distance=..128,limit=1]
 execute if entity @e[tag=anni_target,distance=..128,limit=1] run execute if score @s anniR_cleasingAnim matches 0 store result score @s anni_pitch run data get entity @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] Rotation[1]
 #execute unless entity @e[tag=anni_target,distance=..128,limit=1] run execute as @e[type=item_display,tag=aj.annir_head.root,distance=..10,limit=1,sort=nearest] at @s run tp @s ~ ~ ~ -90 32
-
-#check if the boss died
-execute if score @s anniR_death matches 0 if score @s anniR_despawn matches 0 run execute unless entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] run function annihilation:boss/death/init_death
 
 #attack/ability
 #cooldown

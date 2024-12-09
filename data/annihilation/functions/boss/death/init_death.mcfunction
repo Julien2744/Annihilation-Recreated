@@ -1,4 +1,4 @@
-scoreboard players set @s anniR_death 1
+#scoreboard players set @s anniR_death 1
 execute if entity @a[distance=..64,advancements={annihilation:nether/kill_annihilation = true}] run advancement grant @a[distance=..64] only annihilation:nether/kill_annihilation
 
 function annihilation:boss/death/stop_all_anim
@@ -8,7 +8,7 @@ playsound minecraft:entity.ravager.death hostile @a[distance=..90] ~ ~ ~ 10
 playsound minecraft:entity.warden.roar hostile @a[distance=..90] ~ ~ ~ 10 0
 
 #kill all summons
-schedule function annihilation:boss/death/remove_slime_duplicate 1.75s
+schedule function annihilation:boss/death/remove_slime_duplicate 1.5s
 kill @e[type=armor_stand,tag=anni_meteor_s,tag=anni_summoned,distance=..128]
 kill @e[type=armor_stand,tag=anni_meteor_b,tag=anni_summoned,distance=..128]
 execute as @e[type=magma_cube,tag=!anni_hitbox,tag=anni_immune,tag=anni_summoned,tag=!new_sun_hitbox,distance=..128] run data modify entity @s Size set value 0
