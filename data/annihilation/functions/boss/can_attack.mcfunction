@@ -39,12 +39,12 @@ execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag
 execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=..45] if predicate annihilation:random_25 run execute unless entity @e[type=magma_cube,tag=!anni_hitbox,tag=anni_immune,tag=anni_summoned,distance=..64] run function annihilation:boss/abilities/caustic_phlegm
 
 #blossoming_chaos
-execute if score @s anniR_abilityCooldown matches 0 unless entity @e[type=end_crystal,distance=..90,tag=anni_immune,tag=anni_regen] run execute if score @s anniR_health_pour matches 36..70 run execute if predicate annihilation:random_2 run function animated_java:annihilation_recreated/animations/blossoming_chaos/play
+execute if score @s anniR_abilityCooldown matches 0 unless entity @e[type=end_crystal,distance=..90,tag=anni_immune,tag=anni_regen] run execute if score @s anniR_health_pour matches 36..70 run execute if predicate annihilation:random_5 run function animated_java:annihilation_recreated/animations/blossoming_chaos/play
 execute if score @s anniR_abilityCooldown matches 0 unless entity @e[type=end_crystal,distance=..90,tag=anni_immune,tag=anni_regen] run execute if score @s anniR_health_pour matches ..35 run execute if predicate annihilation:random_15 run function animated_java:annihilation_recreated/animations/blossoming_chaos/play
 
 #eye_of_war
 execute if score @s anniR_abilityCooldown matches 0 unless entity @e[type=skeleton,distance=..90,tag=anni_immune,tag=anni_summoned] if score @s anniR_health_pour matches 71.. run execute if predicate annihilation:random_2 run function animated_java:annihilation_recreated/animations/eyes_of_war/play
-execute if score @s anniR_abilityCooldown matches 0 unless entity @e[type=skeleton,distance=..90,tag=anni_immune,tag=anni_summoned] if score @s anniR_health_pour matches ..70 run execute if predicate annihilation:random_5 run function animated_java:annihilation_recreated/animations/eyes_of_war/play
+execute if score @s anniR_abilityCooldown matches 0 unless entity @e[type=skeleton,distance=..90,tag=anni_immune,tag=anni_summoned] if score @s anniR_health_pour matches ..70 run execute if predicate annihilation:random_8 run function animated_java:annihilation_recreated/animations/eyes_of_war/play
 
 #randomly face target when he can attack
 execute if score @s anniR_struct_spawned matches 0 run execute if predicate annihilation:random_5 run function annihilation:boss/face_target

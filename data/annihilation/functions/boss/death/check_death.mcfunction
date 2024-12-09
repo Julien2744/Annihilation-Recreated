@@ -1,0 +1,2 @@
+execute as @e[type=item_display,tag=aj.annihilation_recreated.root] at @s run execute unless entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] run function annihilation:boss/death/init_death
+execute as @e[type=item_display,tag=aj.annihilation_recreated.root] at @s run execute if entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] run scoreboard players set @s anniR_death 0
