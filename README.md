@@ -10,7 +10,7 @@
 > I only recreate the boss model/texture and attacks, the [music](https://www.youtube.com/watch?v=QiTEljrS05I) and the [structure](https://wynncraft.wiki.gg/wiki/Corruption_Portal) were directly taken from **Wynncraft**
 
 > [!NOTE]
-> this datapack require a ResourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/r1.1_mc1.20.4)
+> this datapack require a ResourcePack [link](https://modrinth.com/datapack/annihilation-recreated/version/r1.1.1_mc1.20.4)
 >
 > require [attributefix](https://modrinth.com/mod/attributefix) if you're ***not playing*** on ***vanilla difficulty*** in `/function annihilation:admin/_/set_config`
 > Or if you are challenging the boss with more than 3 players
