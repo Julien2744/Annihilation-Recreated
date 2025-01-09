@@ -37,9 +37,9 @@ This datapack have a config menu, wich you can access it using `/function annihi
 
 ### summoning Annihilation
 
-You can summon **Annihilation** by going to the **corruption portal** and giving the portal (right-clicking) the items it demand (nether_star and 2 netherite_ingot)
+You can summon **Annihilation** by going to the **corruption portal** and giving the portal a Corrupted Star
 
-Or summon anywhere in the world using `/function annihilation:admin/_/summon`, or at the portal using `/function annihilation:boss_summoner/struct_boss_summon`
+Or summon anywhere in the world using `/function annihilation:admin/_/summon`, or at the portal using `/function annihilation:admin/_/summon_at_portal`
 
 The difficulty of the boss can be change in `/function annihilation:admin/_/set_config`
 
@@ -60,11 +60,11 @@ The damage also change depending on the diffculty
 
 All Annihilation attacks are base from the [wiki](https://wynncraft.wiki.gg/wiki/Annihilation#Combat)
 
-The boss can change/attack target (player or mob) as long as it doesn't have the tag: `anni_immune`
+The boss can change/attack target (player or mob) as long as it doesn't have the tag: `anniR.immune`
 
 You can manually change target using `/execute as <entity> run function annihilation:set_target`
 
-Or `/tag <entity> add anni_target`, but make sure that there only 1 target
+Or `/tag <entity> add anniR.target`, but make sure that there only 1 target
 
 
 
