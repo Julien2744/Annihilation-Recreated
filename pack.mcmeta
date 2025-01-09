@@ -1,10 +1,6 @@
 {
 	"pack": {
-		"pack_format": 18,
-		"supported_formats": [
-			18,
-			26
-        ],
+		"pack_format": 48,
 		"description": "Hateful echoes erupt from the Portal..."
 	}
 }

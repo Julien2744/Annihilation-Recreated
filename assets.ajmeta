@@ -1,0 +1,68 @@
+{
+	"annihilation_recreated": {
+		"files": [
+			"assets/animated_java/models/empty.json",
+			"assets/animated_java/textures/item/transparent.png",
+			"assets/animated_java/models/item/annihilation_recreated/default/head.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/bone.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/jaw.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/body.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/body_back.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/body_front.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/body_middle.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/left_shoulder.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/right_shoulder.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/left_hand_top.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/left_hand_middle.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/left_hand_bottom.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/finger4.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/finger3.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/fingertip3.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/finger2.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/fingertip2.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/finger.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/fingertip.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/sigil.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/right_hand.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/right_hand_middle.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/right_hand_bottom.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/finger5.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/finger6.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/fingertip4.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/finger7.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/fingertip5.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/finger8.json",
+			"assets/animated_java/models/item/annihilation_recreated/default/fingertip6.json"
+		]
+	},
+	"annir_apocalyptic_sigil": {
+		"files": [
+			"assets/animated_java/models/empty.json",
+			"assets/animated_java/textures/item/annir_apocalyptic_sigil/apocalpytic_sigil_texture.png",
+			"assets/animated_java/textures/item/transparent.png",
+			"assets/animated_java/models/item/annir_apocalyptic_sigil/default/red_ring.json",
+			"assets/animated_java/models/item/annir_apocalyptic_sigil/default/beam.json"
+		]
+	},
+	"annir_death_beams": {
+		"files": [
+			"assets/animated_java/models/empty.json",
+			"assets/animated_java/textures/item/annir_death_beams/death_beams_texture.png",
+			"assets/animated_java/textures/item/transparent.png",
+			"assets/animated_java/models/item/annir_death_beams/default/big_ring.json",
+			"assets/animated_java/models/item/annir_death_beams/default/big_beam.json",
+			"assets/animated_java/models/item/annir_death_beams/default/skull.json"
+		]
+	},
+	"annir_head": {
+		"files": [
+			"assets/animated_java/models/empty.json",
+			"assets/animated_java/textures/item/annir_head/sigil.png",
+			"assets/animated_java/textures/item/transparent.png",
+			"assets/animated_java/models/item/annir_head/default/head.json",
+			"assets/animated_java/models/item/annir_head/default/bone.json",
+			"assets/animated_java/models/item/annir_head/default/jaw.json",
+			"assets/animated_java/models/item/annir_head/default/sigil.json"
+		]
+	}
+}
