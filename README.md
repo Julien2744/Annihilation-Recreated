@@ -15,7 +15,7 @@
 > require [attributefix](https://modrinth.com/mod/attributefix) if you're ***not playing*** on ***vanilla difficulty*** in `/function annihilation:admin/_/set_config`
 > Or if you are challenging the boss with more than 3 players
 > 
-> Current version work for `Minecraft 1.20.2` `1.20.3` `1.20.4`
+> Current version work for `Minecraft 1.21.1`
 
 All animations in this datapack where made using [Animated Java](https://animated-java.dev/)
 
@@ -38,6 +38,10 @@ This datapack have a config menu, wich you can access it using `/function annihi
 ### summoning Annihilation
 
 You can summon **Annihilation** by going to the **corruption portal** and giving the portal a Corrupted Star
+
+Here the recipe:
+
+![corrupted star recipe](https://github.com/Julien2744/Annihilation-Recreated/blob/1.21.1/image/crafting-corrupted_star.png)
 
 Or summon anywhere in the world using `/function annihilation:admin/_/summon`, or at the portal using `/function annihilation:admin/_/summon_at_portal`
 
