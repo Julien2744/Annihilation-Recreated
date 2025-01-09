@@ -1,0 +1,1 @@
+scoreboard players set #anniR.load anniR.loadScoreboard 0

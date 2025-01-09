@@ -1,0 +1,1 @@
+execute if predicate annihilation:random_25 run execute positioned ~ ~12 ~ run function annihilation:enchantement_behavior/annihilation_sigil/summon_meteor

@@ -1,0 +1,1 @@
+execute as @n[type=interaction,tag=anniR.summoner] at @s run function annihilation:boss_summoner/init_play
