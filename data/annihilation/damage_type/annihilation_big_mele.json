@@ -1,6 +1,0 @@
-{
-    "message_id": "annir.anni_big_mele",
-    "exhaustion": 0.45,
-    "scaling": "when_caused_by_living_non_player",
-    "effects": "hurt"
-}

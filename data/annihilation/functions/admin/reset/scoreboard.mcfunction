@@ -1,1 +1,0 @@
-scoreboard players set #anniR_load anniR_loadScoreboard 0
