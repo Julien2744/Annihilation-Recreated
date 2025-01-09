@@ -1,0 +1,37 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:nether_wart",
+        "components": {
+          "minecraft:custom_model_data": 167808
+        }
+      },
+      "title": {
+        "text": "Realm of War",
+        "color": "dark_red"
+      },
+      "description": {
+        "text": "Defeat Annihilation",
+        "color": "dark_red"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "minecraft:nether/root",
+    "criteria": {
+      "kill_annihilation": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:cow",
+            "nbt": "{NoAI:1b,Tags:['anniR.hitbox','anniR.immune']}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 1500
+    }
+}

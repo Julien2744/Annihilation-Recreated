@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sbs",
+    "cnc",
+    "bib"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "c": {
+      "item": "minecraft:crimson_nylium"
+    },
+    "n": {
+      "item": "minecraft:nether_star"
+    },
+    "i": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "id": "minecraft:nether_star",
+    "components": {
+      "minecraft:custom_model_data": 38920,
+      "minecraft:item_name": "\"Corrupted Star\"",
+      "minecraft:rarity": "epic",
+      "minecraft:fire_resistant": {}
+    },
+    "count": 1
+  }
+}

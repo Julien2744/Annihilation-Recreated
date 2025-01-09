@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 27
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

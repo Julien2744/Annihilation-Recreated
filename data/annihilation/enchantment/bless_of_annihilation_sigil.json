@@ -1,0 +1,30 @@
+{
+    "description": "Bless of Annihilation Sigil",
+    "supported_items": "#annihilation:enchantable/annihilation_sigil",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 14,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 60,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 10,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "annihilation:enchantement_behavior/annihilation_sigil/chance"
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        }
+      ]
+    }
+}
