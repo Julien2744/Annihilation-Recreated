@@ -14,5 +14,5 @@ execute if score #anniR.global anniR.spawned matches 1 run execute as @e[type=it
 #despawn teh boss if there no player (only for structure boss)
 execute if score #anniR.global anniR.spawned matches 1 run execute as @e[type=item_display,tag=aj.annihilation_recreated.root,scores={anniR.struct_spawned=1,anniR.playerCount=1..}] at @s run execute unless entity @p[distance=..105] run function annihilation:boss/despawn
 
-#player meteor
-execute at @a run execute as @e[type=armor_stand,tag=anniR.player_meteor,distance=..150] at @s run function annihilation:enchantement_behavior/annihilation_sigil/meteor_tick
+#bless of anni sigil enchantment behavior
+execute if entity @e[type=item_display,tag=anniR.player_sigil_buff] run execute as @e[type=item_display,tag=anniR.player_sigil_buff] at @s run function annihilation:enchantement_behavior/annihilation_sigil/sigil_tick

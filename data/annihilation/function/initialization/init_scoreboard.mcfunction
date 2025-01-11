@@ -25,6 +25,9 @@ scoreboard objectives add anniR.checkMobLoot dummy
 scoreboard objectives add anniR.checkMobGrief dummy
 #math
 scoreboard objectives add anniR.newsun_div dummy
+#other
+scoreboard objectives add anniR.player_sigil_buffed dummy
+scoreboard objectives add anniR.player_sigil_cooldown dummy
 
 #local
 #annihilation
@@ -83,7 +86,7 @@ team modify annihilation_team seeFriendlyInvisibles false
 team modify annihilation_team collisionRule pushOtherTeams
 
 ## scoreboard version ##
-scoreboard players set #anniR.load anniR.scoreboardVersion 6
+scoreboard players set #anniR.load anniR.scoreboardVersion 7
 
 #end of initialisating
 scoreboard players set #anniR.load anniR.loadScoreboard 1

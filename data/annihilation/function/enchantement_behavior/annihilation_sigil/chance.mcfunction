@@ -1,0 +1,2 @@
+#yes the command is executes as the player, enven without command on
+execute unless entity @s[scores={anniR.player_sigil_buffed=1}] run execute if predicate annihilation:random_15 run function annihilation:enchantement_behavior/annihilation_sigil/summon_sigil

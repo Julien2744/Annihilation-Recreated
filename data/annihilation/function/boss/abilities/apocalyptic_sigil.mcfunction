@@ -5,6 +5,6 @@ data merge entity @n[type=item_display,tag=aj.annir_apocalyptic_sigil.bone.red_r
 
 playsound minecraft:entity.evoker.cast_spell hostile @a[distance=..50] ~ ~ ~ 3
 
-execute as @e[type=item_display,tag=aj.annir_apocalyptic_sigil.root,limit=1,distance=..128] at @s run function animated_java:annir_apocalyptic_sigil/animations/turn/play
+execute as @n[type=item_display,tag=aj.annir_apocalyptic_sigil.root,distance=..4] at @s run function animated_java:annir_apocalyptic_sigil/animations/turn/play
 
 execute unless score @s anniR.isBuffed matches 0 run scoreboard players remove @s anniR.isBuffed 1

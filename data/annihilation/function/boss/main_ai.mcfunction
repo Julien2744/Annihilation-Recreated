@@ -28,6 +28,8 @@ execute unless score @s anniR.isBuffed matches 0 if entity @n[type=cow,nbt={NoAI
 
 #execute ability
 execute if entity @e[tag=anniR.target,distance=..128,limit=1] if entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] if score @s anniR.abilityCooldown matches 0 run function annihilation:boss/can_attack
+#exhort
+execute if score @s anniR.abilityCooldown matches ..20 if score @s anniR.pitch matches -90..-30 run execute positioned ^ ^16 ^6 if entity @n[tag=anniR.target,tag=!anniR.immune,distance=..16] run function annihilation:boss/execute_attack {ID:9}
 #check ability
 #cleasing inferno
 #short

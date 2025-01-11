@@ -1,6 +1,10 @@
 {
-    "description": "Bless of Annihilation Sigil",
+    "description": {
+      "translate": "enchantment.annihilation_recreated.bless_of_annihilation_sigil",
+      "fallback": "Bless of Annihilation Sigil"
+    },
     "supported_items": "#annihilation:enchantable/annihilation_sigil",
+    "primary_items": "#annihilation:enchantable/annihilation_sigil",
     "weight": 1,
     "max_level": 1,
     "min_cost": {
@@ -23,7 +27,7 @@
             "function": "annihilation:enchantement_behavior/annihilation_sigil/chance"
           },
           "enchanted": "attacker",
-          "affected": "victim"
+          "affected": "attacker"
         }
       ]
     }

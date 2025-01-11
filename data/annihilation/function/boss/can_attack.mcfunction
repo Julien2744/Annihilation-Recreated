@@ -32,7 +32,7 @@ execute if score @s anniR.abilityCooldown matches 0 run execute if entity @n[tag
 execute if score @s anniR.abilityCooldown matches 0 run execute if entity @n[tag=anniR.target,tag=!anniR.immune,distance=56..80] if predicate annihilation:random_35 run function annihilation:boss/execute_attack {ID:6}
 
 #exhort
-execute if score @s anniR.abilityCooldown matches ..20 if score @s anniR.pitch matches -90..-30 run execute positioned ^ ^16 ^6 if entity @n[tag=anniR.target,tag=!anniR.immune,distance=..10] run function annihilation:boss/execute_attack {ID:9}
+#in main_ai.mcfunction
 
 #caustic_phlegm
 execute if score @s anniR.abilityCooldown matches 0 run execute if entity @n[tag=anniR.target,tag=!anniR.immune,distance=..45] if predicate annihilation:random_15 run execute if entity @e[type=magma_cube,tag=anniR.immune,tag=anniR.summoned,distance=..64] if predicate annihilation:random_2 run function annihilation:boss/execute_attack {ID:10}

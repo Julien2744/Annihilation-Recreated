@@ -10,8 +10,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:enchant_randomly",
-              "options": "annihilation:bless_of_annihilation_sigil"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "annihilation:bless_of_annihilation_sigil": 1
+              }
             }
           ]
         }
