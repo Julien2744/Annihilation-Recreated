@@ -2,5 +2,16 @@
 	"pack": {
 		"pack_format": 48,
 		"description": "Hateful echoes erupt from the Portal..."
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "animated_java",
+				"formats": {
+					"min_inclusive": 48,
+					"max_inclusive": 56
+				}
+			}
+		]
 	}
 }
