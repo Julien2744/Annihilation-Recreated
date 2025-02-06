@@ -8,7 +8,7 @@ scoreboard players add @s anniR.death 0
 scoreboard players add @s anniR.isBuffed 0
 scoreboard players add @s anniR.buffedCount 0
 scoreboard players add @s anniR.abilityID 0
-scoreboard players add @s anniR.abilityCooldown 120
+scoreboard players add @s anniR.abilityCooldown 135
 scoreboard players add @s anniR.cleasingAnim 0
 scoreboard players add @s anniR.health_pour 100
 scoreboard players add @s anniR.health 800

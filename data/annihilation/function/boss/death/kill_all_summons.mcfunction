@@ -1,5 +1,5 @@
-kill @e[type=armor_stand,tag=anniR.meteor,tag=anniR.summoned,distance=..128]
 execute as @e[type=magma_cube,tag=anniR.immune,tag=anniR.summoned,tag=!new_sun_hitbox,distance=..128] run data modify entity @s Size set value 0
+kill @e[type=armor_stand,tag=anniR.meteor,tag=anniR.summoned,distance=..128]
 kill @e[type=magma_cube,tag=anniR.immune,tag=anniR.summoned,distance=..128]
 kill @e[type=blaze,tag=anniR.immune,tag=anniR.summoned,distance=..128]
 kill @e[type=piglin,tag=anniR.immune,tag=anniR.summoned,distance=..128]

@@ -12,3 +12,6 @@ playsound minecraft:entity.warden.roar hostile @a[distance=..90] ~ ~ ~ 10 0
 function annihilation:boss/death/kill_all_summons
 
 function animated_java:annihilation_recreated/animations/death/play
+
+#unload 00
+execute if score #anniR.global anniR.00_loaded matches 0 run forceload remove 0 0

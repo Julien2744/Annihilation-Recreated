@@ -7,7 +7,7 @@ execute as @n[type=cow,nbt={NoAI:1b,HurtTime:9s,Tags:["anniR.hitbox","anniR.immu
 execute unless entity @e[tag=anniR.target,distance=..128] run execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] at @s on target run function annihilation:set_target
 
 #make the head stuck the the model
-execute if entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run execute positioned ~ ~9.3125 ~ unless entity @n[type=item_display,tag=aj.annir_head.root,distance=..0.25] run tp @n[type=item_display,tag=aj.annir_head.root,distance=..128] ~ ~ ~
+execute if entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run execute positioned ~ ~8.25 ~ unless entity @n[type=item_display,tag=aj.annir_head.root,distance=..0.25] run tp @n[type=item_display,tag=aj.annir_head.root,distance=..128] ~ ~ ~
 
 #check if the boss died
 execute unless score @s anniR.death matches 1 run execute unless entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run function annihilation:boss/death/init_death
@@ -18,7 +18,7 @@ execute store result bossbar annihilation_bossbar value run scoreboard players g
 bossbar set annihilation_bossbar name [{"text":"Annihilation","color":"red"},{"text":" - ","color":"gray"},{"score":{"name":"@s","objective":"anniR.health"},"color":"red"},{"text":"❤","color":"dark_red"}]
 
 #face target
-execute if entity @e[tag=anniR.target,distance=..128,limit=1] run execute if score @s anniR.cleasingAnim matches 0 as @n[type=item_display,tag=aj.annir_head.root,distance=..10] at @s run tp @s ~ ~ ~ facing entity @e[tag=anniR.target,distance=..128,limit=1]
+execute if entity @e[tag=anniR.target,distance=..128,limit=1] run execute if score @s anniR.cleasingAnim matches 0 as @n[type=item_display,tag=aj.annir_head.root,distance=..10] at @s run tp @s ~ ~ ~ facing entity @e[tag=anniR.target,distance=..128,limit=1] eyes
 execute if entity @e[tag=anniR.target,distance=..128,limit=1] run execute if score @s anniR.cleasingAnim matches 0 store result score @s anniR.pitch run data get entity @n[type=item_display,tag=aj.annir_head.root,distance=..10] Rotation[1]
 
 #attack/ability

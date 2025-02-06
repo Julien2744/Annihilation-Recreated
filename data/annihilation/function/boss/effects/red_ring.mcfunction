@@ -29,4 +29,4 @@ execute unless score @n[type=item_display,tag=aj.annihilation_recreated.root,dis
 execute unless score @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..128] anniR.isBuffed matches 0 run execute if score #anniR.global anniR.difficulty matches 2 run execute if entity @s[tag=anniR.attack] run damage @r[tag=!anniR.immune,distance=..2,limit=1] 3.75 annihilation:apocalyptic_sigil by @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..128]
 
 
-execute unless score @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..128] anniR.isBuffed matches 0 run execute if entity @s[tag=anniR.attack] run execute unless entity @n[type=lightning_bolt,distance=..1] run summon lightning_bolt
+#execute unless score @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..128] anniR.isBuffed matches 0 run execute if entity @s[tag=anniR.attack] run execute unless entity @n[type=lightning_bolt,distance=..1] run summon lightning_bolt

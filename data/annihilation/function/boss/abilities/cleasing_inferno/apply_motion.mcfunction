@@ -16,6 +16,6 @@ execute if entity @e[tag=anniR.target,tag=!anniR.immune,limit=1,distance=22..38]
 execute if entity @e[tag=anniR.target,tag=!anniR.immune,limit=1,distance=56..80] run execute as @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s}] run function annihilation:boss/abilities/cleasing_inferno/motion/long
 
 #player escape the zone
-execute if entity @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s,Motion:[0.0d,0.0d,0.0d]}] run execute as @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s}] store result entity @s Motion[0] double 0.001 run scoreboard players get @s anniR.motX
+execute if entity @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s,Motion:[0.0d,0.0d,0.0d]}] run execute as @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s}] store result entity @s Motion[0] double 0.0012 run scoreboard players get @s anniR.motX
 execute if entity @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s,Motion:[0.0d,0.0d,0.0d]}] run execute as @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s}] store result entity @s Motion[1] double 0.0002 run scoreboard players get @s anniR.motY
-execute if entity @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s,Motion:[0.0d,0.0d,0.0d]}] run execute as @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s}] store result entity @s Motion[2] double 0.001 run scoreboard players get @s anniR.motZ
+execute if entity @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s,Motion:[0.0d,0.0d,0.0d]}] run execute as @e[type=arrow,tag=anniR.projectile,distance=..16,nbt={Fire:120s}] store result entity @s Motion[2] double 0.0012 run scoreboard players get @s anniR.motZ

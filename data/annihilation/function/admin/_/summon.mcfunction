@@ -8,7 +8,7 @@ execute unless entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immun
 
 #model
 execute at @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] rotated -90 0 run function animated_java:annihilation_recreated/summon {args: {}}
-execute at @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] rotated -90 25 run execute positioned ~ ~9.3125 ~ run function animated_java:annir_head/summon {args: {}}
+execute at @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] rotated -90 25 run execute positioned ~ ~8.25 ~ run function animated_java:annir_head/summon {args: {}}
 execute at @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run function annihilation:boss/looking_head
 execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run ride @s mount @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..2]
 data modify entity @n[type=item_display,tag=aj.annir_head.bone.sigil,distance=..32] view_range set value 0.0f
@@ -44,3 +44,7 @@ execute store result bossbar annihilation_bossbar max run attribute @n[type=cow,
 execute store result bossbar annihilation_bossbar value run data get entity @n[type=cow,tag=anniR.hitbox,nbt={NoAI:1b},distance=..2] Health
 
 tag @p[tag=!anniR.target,distance=..128,gamemode=!creative,gamemode=!spectator,limit=1] add anniR.target
+
+#load 00
+execute store result score #anniR.global anniR.00_loaded run forceload query 0 0
+execute if score #anniR.global anniR.00_loaded matches 0 run forceload add 0 0

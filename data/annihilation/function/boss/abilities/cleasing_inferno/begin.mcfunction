@@ -1,6 +1,3 @@
-execute store result score #anniR.global anniR.00_loaded run forceload query 0 0
-execute if score #anniR.global anniR.00_loaded matches 0 run forceload add 0 0
-
 #short
 execute if entity @n[tag=anniR.target,tag=!anniR.immune,distance=6.5..18] run scoreboard players set @s anniR.cleasingAnim 1
 execute if score @s anniR.cleasingAnim matches 1 run execute as @n[type=item_display,tag=aj.annir_head.root,distance=..10] at @s run tp @s ~ ~ ~ ~45 ~
