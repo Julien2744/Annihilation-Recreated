@@ -15,7 +15,7 @@ data modify entity @n[type=item_display,tag=aj.annir_head.bone.sigil,distance=..
 data merge entity @n[type=item_display,tag=aj.annir_head.bone.sigil,distance=..32] {brightness:{sky:15,block:15}}
 data modify entity @n[type=item_display,tag=aj.annihilation_recreated.bone.sigil,distance=..32] view_range set value 0.0f
 
-#itnit boss bar & team
+#init boss bar & team
 bossbar add annihilation_bossbar {"text":"Annihilation","color":"red"}
 bossbar set annihilation_bossbar style progress
 bossbar set annihilation_bossbar color red
@@ -26,11 +26,11 @@ execute if score #anniR.global anniR.team matches 1 run team join annihilation_t
 #local scoreboard
 execute as @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..2] at @s run function annihilation:boss/init_vars
 
-#change data due to difficulty
+#change anni health due to difficulty
 execute if score #anniR.global anniR.difficulty matches 1 run data merge entity @n[type=cow,tag=anniR.hitbox,nbt={NoAI:1b},distance=..2] {Health:2500,attributes:[{id:generic.max_health,base:2500},{id:generic.armor,base:15},{id:generic.armor_toughness,base:5}]}
 execute if score #anniR.global anniR.difficulty matches 2 run data merge entity @n[type=cow,tag=anniR.hitbox,nbt={NoAI:1b},distance=..2] {Health:8000,attributes:[{id:generic.max_health,base:8000},{id:generic.armor,base:20},{id:generic.armor_toughness,base:7}]}
 
-#change health depending on player
+#increase health depending on how many players there is
 execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..2,limit=1] anniR.playerCount matches 2.. run execute as @n[type=cow,tag=anniR.hitbox,nbt={NoAI:1b},distance=..2] at @s run function annihilation:boss/health_scale
 
 #initiliaze boss health%
@@ -45,6 +45,5 @@ execute store result bossbar annihilation_bossbar value run data get entity @n[t
 
 tag @p[tag=!anniR.target,distance=..128,gamemode=!creative,gamemode=!spectator,limit=1] add anniR.target
 
-#load 00
-execute store result score #anniR.global anniR.00_loaded run forceload query 0 0
-execute if score #anniR.global anniR.00_loaded matches 0 run forceload add 0 0
+#load [0,0]
+schedule function annihilation:load_00 40t

@@ -14,7 +14,7 @@ function annihilation:boss_summoner/summon
 playsound minecraft:item.trident.thunder hostile @a[distance=..128] ~ ~ ~ 12 0
 tellraw @a [{"text":"There were no players left to defeat ","color":"gray"},{"text":"Annihilation","color":"dark_red"},{"text":"...","color":"gray"}]
 
-execute at @a run stopsound @p record annihilation_recreated:annihilation_by_texilated
+execute at @a[distance=..128] run stopsound @p[distance=..1] record annihilation_recreated:annihilation_by_texilated
 schedule function annihilation:boss/play_music 3s
 
 #despawn anni

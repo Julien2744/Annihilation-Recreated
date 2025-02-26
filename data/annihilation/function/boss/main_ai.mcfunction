@@ -8,6 +8,8 @@ execute unless entity @e[tag=anniR.target,distance=..128] run execute as @n[type
 
 #make the head stuck the the model
 execute if entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run execute positioned ~ ~8.25 ~ unless entity @n[type=item_display,tag=aj.annir_head.root,distance=..0.25] run tp @n[type=item_display,tag=aj.annir_head.root,distance=..128] ~ ~ ~
+#make the hitbox stuck to model if dismounted
+execute on passengers unless entity @s[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]}] run ride @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..4] mount @s
 
 #check if the boss died
 execute unless score @s anniR.death matches 1 run execute unless entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run function annihilation:boss/death/init_death

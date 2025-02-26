@@ -12,6 +12,8 @@ summon arrow ^-1.4 ^-1 ^6.3 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:
 summon arrow ^0.6 ^-0.5 ^7 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anniR.projectile"],life:1180}
 summon arrow ^-1.05 ^1 ^6.6 {Fire:120,damage:0d,Motion:[0.0,0.0,0.0],SoundEvent:"block.fire.ambient",Tags:["anniR.projectile"],life:1180}
 
+execute as @e[type=arrow,tag=anniR.projectile,distance=..16] run data modify entity @s Owner set from entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..18] UUID
+
 #damage is in annihilation:boss/abilities/cleasing_inferno/apply_motion/
 
 execute if score #anniR.global anniR.team matches 1 run team join annihilation_team @e[type=arrow,tag=anniR.projectile,distance=..16]

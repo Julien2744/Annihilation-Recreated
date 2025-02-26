@@ -43,8 +43,8 @@ execute if score @s anniR.abilityCooldown matches 0 unless entity @e[type=end_cr
 #in main_ai.mcfunction
 
 #death beams
-execute if score @s anniR.health_pour matches 45..90 if score @s anniR.abilityCooldown matches 0 run execute if predicate annihilation:random_15 run function annihilation:boss/execute_attack {ID:11}
-execute if score @s anniR.health_pour matches ..44 if score @s anniR.abilityCooldown matches 0 run execute if predicate annihilation:random_25 run function annihilation:boss/execute_attack {ID:11}
+execute if score @s anniR.health_pour matches 45..85 if score @s anniR.abilityCooldown matches 0 run execute if predicate annihilation:random_15 run execute at @n[tag=anniR.target,distance=..128] unless entity @n[type=item_display,tag=aj.annir_death_beams.root,distance=..5] unless entity @n[type=enderman,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..5] run function annihilation:boss/execute_attack {ID:11}
+execute if score @s anniR.health_pour matches ..44 if score @s anniR.abilityCooldown matches 0 run execute if predicate annihilation:random_25 run execute at @n[tag=anniR.target,distance=..128] unless entity @n[type=item_display,tag=aj.annir_death_beams.root,distance=..5] unless entity @n[type=enderman,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..5] run function annihilation:boss/execute_attack {ID:11}
 
 #eye_of_war
 execute if score @s anniR.abilityCooldown matches 0 unless entity @e[type=skeleton,distance=..90,tag=anniR.immune,tag=anniR.summoned] if score @s anniR.health_pour matches 71.. run execute if predicate annihilation:random_2 run function annihilation:boss/execute_attack {ID:13}
