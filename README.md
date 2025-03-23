@@ -19,7 +19,7 @@
 
 All animations in this datapack where made using [Animated Java](https://animated-java.dev/)
 
-The `animated_java` files are not included due to how many there are (1500+ files), and because the file are 99% models and animations.
+The `animated_java` files are not included due to how many there are (1500+ files), and because the files are 99% models and animations.
 You can found them on the [modrinth](https://modrinth.com/datapack/annihilation-recreated/) page where you can download the datapack
 
 ## features
@@ -72,4 +72,4 @@ Or `/tag <entity> add anniR.target`, but make sure that there only 1 target
 
 
 
-- dev note: A lot of attack ; behavior ; and models are not 100% accurate since it's almost impossible and my only visual source where player soloing Annihilation.
+- dev note: A lot of attacks ; behaviors ; and models are not 100% accurate since it's almost impossible.
