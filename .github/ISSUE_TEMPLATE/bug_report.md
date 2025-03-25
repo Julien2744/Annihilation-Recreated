@@ -3,7 +3,7 @@ name: Bug report
 about: Make a report to improve the datapack
 title: "[BUG]"
 labels: bug
-assignees: ''
+assignees: Julien2744
 
 ---
 
@@ -19,7 +19,7 @@ assignees: ''
 
 *text here*
 
-**Did the bug occurs when you have other mods installed ?**
+**Did the bug occurs when you have other mods/datapacks installed ?**
 
 *text here*
 
