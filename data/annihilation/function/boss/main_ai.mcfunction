@@ -21,6 +21,7 @@ bossbar set annihilation_bossbar name [{"text":"Annihilation","color":"red"},{"t
 
 #face target
 execute if entity @e[tag=anniR.target,distance=..128,limit=1] run execute if score @s anniR.cleasingAnim matches 0 as @n[type=item_display,tag=aj.annir_head.root,distance=..10] at @s run tp @s ~ ~ ~ facing entity @e[tag=anniR.target,distance=..128,limit=1] eyes
+execute if entity @e[tag=anniR.target,distance=..128,limit=1] run execute if score @s anniR.cleasingAnim matches 0 as @n[type=item_display,tag=aj.annir_head.root,distance=..10] at @s run tp @s ~ ~ ~ ~ ~13
 execute if entity @e[tag=anniR.target,distance=..128,limit=1] run execute if score @s anniR.cleasingAnim matches 0 store result score @s anniR.pitch run data get entity @n[type=item_display,tag=aj.annir_head.root,distance=..10] Rotation[1]
 
 #attack/ability
@@ -31,7 +32,7 @@ execute unless score @s anniR.isBuffed matches 0 if entity @n[type=cow,nbt={NoAI
 #execute ability
 execute if entity @e[tag=anniR.target,distance=..128,limit=1] if entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] if score @s anniR.abilityCooldown matches 0 run function annihilation:boss/can_attack
 #exhort
-execute if score @s anniR.abilityCooldown matches ..20 if score @s anniR.pitch matches -90..-30 run execute positioned ^ ^16 ^6 if entity @n[tag=anniR.target,tag=!anniR.immune,distance=..16] run function annihilation:boss/execute_attack {ID:9}
+execute if score @s anniR.abilityCooldown matches ..20 if score @s anniR.pitch matches -60..-17 run execute positioned ^ ^16 ^6 if entity @n[tag=anniR.target,tag=!anniR.immune,distance=..16] run function annihilation:boss/execute_attack {ID:9}
 #check ability
 #cleasing inferno
 #short

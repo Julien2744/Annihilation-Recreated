@@ -11,3 +11,6 @@ execute on attacker run execute if entity @s[type=!player,tag=!anniR.target,tag=
 
 #face taget
 execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..8,limit=1] anniR.struct_spawned matches 0 run execute if predicate annihilation:random_35 run function annihilation:boss/face_target
+
+#re-gain ivis
+execute unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run effect give @s invisibility infinite 1 true

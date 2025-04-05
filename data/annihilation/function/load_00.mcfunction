@@ -1,2 +1,2 @@
-execute store result score #anniR.global anniR.00_loaded run forceload query 0 0
-execute if score #anniR.global anniR.00_loaded matches 0 run forceload add 0 0
+execute as @n[type=item_display,tag=aj.annihilation_recreated.root] at @s run execute store result score #anniR.global anniR.00_loaded run forceload query 0 0
+execute if score #anniR.global anniR.00_loaded matches 0 run execute as @n[type=item_display,tag=aj.annihilation_recreated.root] at @s run forceload add 0 0
