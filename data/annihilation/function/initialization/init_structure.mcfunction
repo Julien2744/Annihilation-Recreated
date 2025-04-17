@@ -5,7 +5,7 @@ execute if score #anniR.load anniR.structureTimer matches 1 run forceload add 19
 execute if score #anniR.load anniR.structureTimer matches 1 run execute positioned 212 -37.5 -1291.05 run kill @e[type=interaction,tag=anni.summoner,distance=..8]
 execute if score #anniR.load anniR.structureTimer matches 1 run execute positioned 212 -37.5 -1291.05 run kill @e[type=item_display,tag=anni.item,distance=..8]
 
-#comment this two line to disable structure generation
+#comment these two lines to disable structure generation
 execute if score #anniR.load anniR.structureTimer matches 2 run execute store result score #anniR.load anniR.checkMobSpawn run gamerule doMobSpawning
 execute if score #anniR.load anniR.structureTimer matches 2 if score #anniR.load anniR.checkMobSpawn matches 1 run function annihilation:initialization/generate_structure
 

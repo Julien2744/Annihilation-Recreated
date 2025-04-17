@@ -1,5 +1,3 @@
-#max scale is of 6 players
-
 #3 players
 execute if score @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..2] anniR.playerCount matches 3 run attribute @s generic.max_health modifier add annir.player_count 0.25 add_multiplied_base
 

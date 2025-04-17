@@ -14,7 +14,7 @@ execute if score @s anniR.struct_spawned matches 1 run function annihilation:bos
 
 function animated_java:annihilation_recreated/remove/this
 
-#check if there any more anni
+#check if there any more annie
 execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1] run scoreboard players set #anniR.global anniR.spawned 0
 
 execute if score #anniR.global anniR.spawned matches 0 run bossbar remove annihilation_bossbar

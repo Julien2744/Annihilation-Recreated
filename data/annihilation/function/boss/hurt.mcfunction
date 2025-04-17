@@ -14,3 +14,6 @@ execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,distanc
 
 #re-gain ivis
 execute unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run effect give @s invisibility infinite 1 true
+
+#auto-intakill summon if they attack annie
+execute on attacker run execute if entity @s[tag=!anniR.target,tag=anniR.immune,tag=anniR.summoned] run kill @s

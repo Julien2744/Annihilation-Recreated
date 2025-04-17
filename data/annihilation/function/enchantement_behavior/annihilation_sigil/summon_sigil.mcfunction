@@ -1,7 +1,7 @@
 scoreboard players set @s anniR.player_sigil_buffed 1
 
-summon item_display ~ ~ ~ {Tags:["anniR.player_sigil_buff"],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.8f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:blaze_powder",count:1,components:{"minecraft:custom_model_data":3786}}}
-scoreboard players set @n[type=item_display,tag=anniR.player_sigil_buff,distance=..0.05] anniR.player_sigil_cooldown 100
+execute at @s run summon item_display ~ ~1.4 ~ {Tags:["anniR.player_sigil_buff"],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.8f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:blaze_powder",count:1,components:{"minecraft:custom_model_data":3786}}}
+execute at @s positioned ~ ~1.4 ~ run scoreboard players set @n[type=item_display,tag=anniR.player_sigil_buff,distance=..0.05] anniR.player_sigil_cooldown 100
 
 #buff
 attribute @s generic.attack_damage modifier add annir.sigil_buff 0.2 add_multiplied_base

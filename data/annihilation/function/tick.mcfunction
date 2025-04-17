@@ -11,8 +11,8 @@ execute if score #anniR.global anniR.boss_summoner matches 0 run execute as @e[t
 ## loop boss ai
 execute if score #anniR.global anniR.spawned matches 1 run execute as @e[type=item_display,tag=aj.annihilation_recreated.root] at @s run function annihilation:boss/main_ai
 
-#despawn teh boss if there no player (only for structure boss)
+#despawn the boss if there are no players (only for structure boss)
 execute if score #anniR.global anniR.spawned matches 1 run execute as @e[type=item_display,tag=aj.annihilation_recreated.root,scores={anniR.struct_spawned=1,anniR.playerCount=1..}] at @s run execute unless entity @p[distance=..105] run function annihilation:boss/despawn
 
-#bless of anni sigil enchantment behavior
+#bless of annie sigil enchantment behavior
 execute if entity @e[type=item_display,tag=anniR.player_sigil_buff] run execute as @e[type=item_display,tag=anniR.player_sigil_buff] at @s run function annihilation:enchantement_behavior/annihilation_sigil/sigil_tick

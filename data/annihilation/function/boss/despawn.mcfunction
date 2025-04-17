@@ -17,9 +17,9 @@ tellraw @a [{"text":"There were no players left to defeat ","color":"gray"},{"te
 execute at @a[distance=..128] run stopsound @p[distance=..1] record annihilation_recreated:annihilation_by_texilated
 schedule function annihilation:boss/play_music 3s
 
-#despawn anni
+#despawn annie
 kill @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2]
 function animated_java:annihilation_recreated/remove/this
 
-#check if there any more anni
+#check if there any more annie
 execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1] run scoreboard players set #anniR.global anniR.spawned 0

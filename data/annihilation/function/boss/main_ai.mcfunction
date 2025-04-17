@@ -1,14 +1,14 @@
-#every command here is executed as root model at the root
+#every commands here is executed as root model at the root
 
 #execute commands if the boss has taken damage
 execute as @n[type=cow,nbt={NoAI:1b,HurtTime:9s,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run function annihilation:boss/hurt
 
-#auto-target using the hitbox minecraft target
+#auto-target using the hitbox mob target
 execute unless entity @e[tag=anniR.target,distance=..128] run execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] at @s on target run function annihilation:set_target
 
 #make the head stuck the the model
 execute if entity @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] run execute positioned ~ ~8.25 ~ unless entity @n[type=item_display,tag=aj.annir_head.root,distance=..0.25] run tp @n[type=item_display,tag=aj.annir_head.root,distance=..128] ~ ~ ~
-#make the hitbox stuck to model if dismounted
+#make the hitbox mob stuck to model if dismounted
 execute on passengers unless entity @s[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]}] run ride @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..4] mount @s
 
 #check if the boss died

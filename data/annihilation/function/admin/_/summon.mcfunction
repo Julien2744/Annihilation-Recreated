@@ -26,11 +26,11 @@ execute if score #anniR.global anniR.team matches 1 run team join annihilation_t
 #local scoreboard
 execute as @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..2] at @s run function annihilation:boss/init_vars
 
-#change anni health due to difficulty
+#change annie health due to difficulty
 execute if score #anniR.global anniR.difficulty matches 1 run data merge entity @n[type=cow,tag=anniR.hitbox,nbt={NoAI:1b},distance=..2] {Health:2500,attributes:[{id:generic.max_health,base:2500},{id:generic.armor,base:15},{id:generic.armor_toughness,base:5}]}
 execute if score #anniR.global anniR.difficulty matches 2 run data merge entity @n[type=cow,tag=anniR.hitbox,nbt={NoAI:1b},distance=..2] {Health:8000,attributes:[{id:generic.max_health,base:8000},{id:generic.armor,base:20},{id:generic.armor_toughness,base:7}]}
 
-#increase health depending on how many players there is
+#increase health depending on how many players there are
 execute if score @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..2,limit=1] anniR.playerCount matches 2.. run execute as @n[type=cow,tag=anniR.hitbox,nbt={NoAI:1b},distance=..2] at @s run function annihilation:boss/health_scale
 
 #initiliaze boss health%

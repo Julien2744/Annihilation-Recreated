@@ -4,12 +4,12 @@
 scoreboard objectives add anniR.spawned dummy
 #0: off(no-instakill) ; 1: on(instakill)
 scoreboard objectives add anniR.newsun_kill dummy
-#0: demand nether.start ; 1: demand netherite.1 ; 2: demand netherite.2 ; 3: boss summoned   only for boss summoned in the structure
+#0: demand corrupted star; 1: start playing anim; >1: currently playing
 scoreboard objectives add anniR.boss_summoner dummy
 #0: false ; 1: true
 scoreboard objectives add anniR.00_loaded dummy
 #config
-#0: vanillia ; 1: modded : 2: heavy.modded
+#0: vanillia ; 1: modded : 2: heavy modded
 scoreboard objectives add anniR.difficulty dummy
 #0: off ; 1: on
 scoreboard objectives add anniR.onlyTrophy dummy
@@ -36,14 +36,14 @@ scoreboard objectives add anniR.player_sigil_cooldown dummy
 scoreboard objectives add anniR.struct_spawned dummy
 #0: false ; 1: true
 scoreboard objectives add anniR.death dummy
-#0: isn't ; number of ability buffed (decrease)
+#0: isn't ; >0: time buffed (decreassed when an ability is executed)
 scoreboard objectives add anniR.isBuffed dummy
 scoreboard objectives add anniR.buffedCount dummy
 scoreboard objectives add anniR.playerCount dummy
 #Id start at 1 (0 = no anim) and are the same order in the official wiki (ex. rake = 1, flense = 2)
 scoreboard objectives add anniR.abilityID dummy
 scoreboard objectives add anniR.abilityCooldown dummy
-#0: isn't playing/long ; 1: short ; 2: bridge
+#0: isn't playing or long ; 1: short ; 2: bridge
 scoreboard objectives add anniR.cleasingAnim dummy
 scoreboard objectives add anniR.health_pour dummy
 scoreboard objectives add anniR.health dummy

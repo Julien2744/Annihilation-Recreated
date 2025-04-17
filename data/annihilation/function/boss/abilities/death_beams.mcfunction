@@ -10,6 +10,6 @@ execute as @n[type=item_display,tag=aj.annir_death_beams.root,distance=..4] at @
 #tp to target
 execute as @n[type=item_display,tag=aj.annir_death_beams.root,distance=..128] run execute positioned as @n[tag=anniR.target,tag=!anniR.immune,distance=..128] run tp @s ~ ~ ~ 0 0
 
-#buffed
+#buffed (done twice incase annir.isBuffed = 1)
 execute unless score @s anniR.isBuffed matches 0 run scoreboard players remove @s anniR.isBuffed 1
 execute unless score @s anniR.isBuffed matches 0 run scoreboard players remove @s anniR.isBuffed 1
