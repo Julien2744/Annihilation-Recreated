@@ -3,7 +3,7 @@ execute if score #anniR.global anniR.boss_summoner matches 1 run execute as @e[t
 execute if score #anniR.global anniR.boss_summoner matches 1 run execute as @e[type=marker,tag=anniR.summoning,limit=1] at @s run particle minecraft:trial_spawner_detection ~ ~-0.5 ~ 0.25 0.25 0.25 0 15
 execute if score #anniR.global anniR.boss_summoner matches 1 run execute as @e[type=marker,tag=anniR.summoning,limit=1] at @s run particle minecraft:ash ~ ~0.5 ~ 0.25 0.25 0.25 0 15
 execute unless score #anniR.global anniR.boss_summoner matches 1 run execute as @e[type=marker,tag=anniR.summoning,limit=1] at @s run playsound entity.elder_guardian.curse block @a[distance=..90] ~ ~ ~ 10
-execute unless score #anniR.global anniR.boss_summoner matches 1 run execute as @e[type=marker,tag=anniR.summoning,limit=1] at @s positioned ^-5 ^3 ^ rotated ~-90 ~ run function annihilation:boss/effects/sigil_small
+execute unless score #anniR.global anniR.boss_summoner matches 1 run execute as @e[type=marker,tag=anniR.summoning,limit=1] at @s rotated ~180 ~ positioned ^ ^3 ^5 run function annihilation:boss/effects/sigil_small
 
 scoreboard players add #anniR.global anniR.boss_summoner 1
 

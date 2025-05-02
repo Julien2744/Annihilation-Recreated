@@ -2,7 +2,10 @@ scoreboard players set #anniR.global anniR.boss_summoner 1
 
 clear @p[gamemode=!creative,gamemode=!spectator,distance=..8] nether_star[custom_model_data=38920] 1
 
+#summon marker
 summon marker ~ ~ ~ {Tags:["anniR.summoning"]}
+data modify entity @n[type=minecraft:marker,tag=anniR.summoning,distance=..16] Rotation set from entity @n[type=minecraft:item_display,tag=anniR.item_display,distance=..16] Rotation
+execute as @n[type=minecraft:marker,tag=anniR.summoning,distance=..16] at @s run tp @s ~ ~ ~ ~180 ~
 
 function annihilation:boss_summoner/anim
 

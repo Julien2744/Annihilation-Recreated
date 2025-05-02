@@ -1,8 +1,5 @@
 scoreboard players set #anniR.global anniR.boss_summoner 0
 
-#remove maker
-kill @s
-
 #msuic
 #playsound
 execute if score #anniR.global anniR.music matches 1 run playsound annihilation_recreated:annihilation_by_texilated record @a[distance=..90] ~ ~ ~ 10
@@ -23,6 +20,9 @@ effect give @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},dista
 #anti-suffocation
 #execute store result score #anniR.global anniR.checkMobGrief run gamerule mobGriefing
 #execute if score #anniR.global anniR.checkMobGrief matches 1 run execute as @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..4] at @s run fill ^10 ^12 ^4 ^-10 ^ ^-2 air destroy
+
+#remove maker
+kill @s
 
 #sound
 playsound minecraft:entity.warden.emerge hostile @a[distance=..90] ~ ~ ~ 10
