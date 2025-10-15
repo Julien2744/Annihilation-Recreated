@@ -1,13 +1,10 @@
-#heal
-#vanilla
-execute if score #anniR.global anniR.difficulty matches 0 run execute if entity @n[type=wither_skeleton,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..6] run execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..90] run execute unless entity @s[nbt={active_effects:[{id:"minecraft:regeneration"}]}] if predicate annihilation:random_30 run effect give @s regeneration 1 3 true
-execute if score #anniR.global anniR.difficulty matches 0 run execute if entity @n[type=wither_skeleton,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..6] run execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..90] run execute unless entity @s[nbt={active_effects:[{id:"minecraft:regeneration"}]}] run effect give @s regeneration 1 2 true
-#modded
-execute if score #anniR.global anniR.difficulty matches 1 run execute if entity @n[type=wither_skeleton,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..6] run execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..90] run execute unless entity @s[nbt={active_effects:[{id:"minecraft:regeneration"}]}] if predicate annihilation:random_30 run effect give @s regeneration 1 4 true
-execute if score #anniR.global anniR.difficulty matches 1 run execute if entity @n[type=wither_skeleton,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..6] run execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..90] run execute unless entity @s[nbt={active_effects:[{id:"minecraft:regeneration"}]}] run effect give @s regeneration 1 3 true
-#heavy_modded
-execute if score #anniR.global anniR.difficulty matches 2 run execute if entity @n[type=wither_skeleton,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..6] run execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..90] run execute unless entity @s[nbt={active_effects:[{id:"minecraft:regeneration"}]}] if predicate annihilation:random_30 run effect give @s regeneration 1 5 true
-execute if score #anniR.global anniR.difficulty matches 2 run execute if entity @n[type=wither_skeleton,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..6] run execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..90] run execute unless entity @s[nbt={active_effects:[{id:"minecraft:regeneration"}]}] run effect give @s regeneration 1 4 true
+#actual regen (0.45% of maxhp every second)
 
-#kill end_crystal
-execute unless entity @n[type=wither_skeleton,tag=anniR.immune,tag=anniR.summoned,nbt={NoAI:1b},distance=..6] run kill @s
+execute store result score @s anniR.math.mem run attribute @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] generic.max_health get 0.0045
+
+scoreboard players operation @s anniR.health += @s anniR.math.mem
+execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] store result entity @s Health float 1 on vehicle run scoreboard players get @s anniR.health
+
+execute as @n[type=cow,nbt={NoAI:1b,Tags:["anniR.hitbox","anniR.immune"]},distance=..2] at @s run function annihilation:boss/update_health_pour
+
+tag @e[type=end_crystal,distance=..128,tag=anniR.summoned,tag=anniR.regen,tag=!anniR.subjugate_heal.done,limit=1] add anniR.subjugate_heal.done

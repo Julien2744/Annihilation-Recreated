@@ -46,7 +46,7 @@ execute if entity @e[type=item_display,tag=aj.annir_apocalyptic_sigil.root,limit
 #death_ring
 execute if entity @e[type=item_display,tag=aj.annir_death_beams.root,tag=aj.annir_death_beams.animation.attack.playing,limit=1,distance=..128] run execute as @e[type=item_display,tag=aj.annir_death_beams.root,tag=aj.annir_death_beams.animation.attack.playing,limit=1,distance=..128] at @s run function annihilation:boss/effects/death_ring
 #infernal subjugate
-execute if entity @e[type=end_crystal,distance=..128,tag=anniR.summoned,tag=anniR.regen] run execute as @e[type=end_crystal,distance=..128,tag=anniR.summoned,tag=anniR.regen] at @s run function annihilation:boss/effects/subjugate_heal
+execute if entity @e[type=end_crystal,distance=..128,tag=anniR.summoned,tag=anniR.regen] run execute as @e[type=end_crystal,distance=..128,tag=anniR.summoned,tag=anniR.regen] at @s run function annihilation:boss/effects/subjugate_heal_check
 #new sun
 execute if score @s anniR.new_sun matches 1..2 run execute if entity @e[type=item_display,limit=1,tag=anniR.new_sun_display,tag=anniR.immune,tag=anniR.summoned,distance=..32] run execute as @e[type=item_display,limit=1,tag=anniR.new_sun_display,tag=anniR.immune,tag=anniR.summoned,distance=..32] at @s run function annihilation:boss/effects/new_sun_check
 
