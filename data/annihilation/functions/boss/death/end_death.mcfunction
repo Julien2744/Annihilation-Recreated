@@ -2,6 +2,8 @@
 execute store result score #anniR_global anniR_checkMobLoot run gamerule doMobLoot
 
 execute if score #anniR_global anniR_onlyTrophy matches 0 if score #anniR_global anniR_checkMobLoot matches 1 run fill ^ ^ ^5 ^ ^1 ^5 air destroy
+execute if score #anniR_global anniR_onlyTrophy matches 0 if score #anniR_global anniR_checkMobLoot matches 1 run particle minecraft:wax_off ^ ^ ^5 0.4 0.4 0.4 5 20
+execute if score #anniR_global anniR_onlyTrophy matches 0 if score #anniR_global anniR_checkMobLoot matches 1 run playsound minecraft:block.ender_chest.open block @a[distance=..90] ~ ~ ~ 8 1
 execute if score #anniR_global anniR_onlyTrophy matches 0 if score #anniR_global anniR_checkMobLoot matches 1 if score #anniR_global anniR_difficulty matches 0 run setblock ^ ^ ^5 chest[facing=east]{LootTable:"annihilation:vanillia_loot"}
 execute if score #anniR_global anniR_onlyTrophy matches 0 if score #anniR_global anniR_checkMobLoot matches 1 if score #anniR_global anniR_difficulty matches 1 run setblock ^ ^ ^5 chest[facing=east]{LootTable:"annihilation:modded_loot"}
 execute if score #anniR_global anniR_onlyTrophy matches 0 if score #anniR_global anniR_checkMobLoot matches 1 if score #anniR_global anniR_difficulty matches 2 run setblock ^ ^ ^5 chest[facing=east]{LootTable:"annihilation:heavy_modded_loot"}
@@ -18,3 +20,7 @@ execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,li
 
 #check if there any more anni
 execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1] run scoreboard players set #anniR_global anniR_spawned 0
+
+#stop the music
+execute if score #anniR_global anniR_spawned matches 0 run stopsound @a[distance=..128] record annihilation_recreated:annihilation_by_texilated
+execute if score #anniR_global anniR_spawned matches 0 run function annihilation:boss/play_music

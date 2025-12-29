@@ -12,7 +12,7 @@ execute unless score @s anniR_buffedCount matches 2 run execute if score @s anni
 #cleasing inferno (short)
 execute if score @s anniR_abilityCooldown matches 0 run execute if entity @e[tag=anni_target,tag=!anni_immune,limit=1,distance=6.5..18] if predicate annihilation:random_35 run function annihilation:boss/abilities/cleasing_inferno/begin
 
-#apocalpytic_sigil
+#apocalyptic sigil
 execute if score @s anniR_abilityCooldown matches 0 run execute run execute unless entity @e[type=item_display,tag=aj.annir_apocalpytic_sigil.root,limit=1,distance=..128] if predicate annihilation:random_30 run function animated_java:annihilation_recreated/animations/apocalpytic_sigil/play
 
 #secare
