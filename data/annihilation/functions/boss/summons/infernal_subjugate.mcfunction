@@ -7,7 +7,7 @@ execute as @e[type=end_crystal,limit=1,distance=..3,tag=anni_immune,tag=anni_reg
 execute as @e[type=end_crystal,limit=1,distance=..3,tag=anni_immune,tag=anni_regen,sort=nearest] store result entity @s BeamTarget.Z double 1 run data get entity @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..90,limit=1] Pos[2]
 
 execute store result score #anniR_global anniR_checkMobGrief run gamerule mobGriefing
-execute if score #anniR_global anniR_checkMobGrief matches 1 run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:netherrack destroy
+execute if score #anniR_global anniR_checkMobGrief matches 1 run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:nether_bricks destroy
 execute if score #anniR_global anniR_checkMobGrief matches 1 run fill ~-1 ~3 ~-1 ~1 ~ ~1 minecraft:air destroy
 
 execute if score #anniR_global anniR_team matches 1 run team join annihilation_team @e[type=slime,tag=anni_immune,tag=anni_summoned,distance=..1,limit=1,sort=nearest]

@@ -20,7 +20,3 @@ execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,li
 
 #check if there any more anni
 execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,limit=1] run scoreboard players set #anniR_global anniR_spawned 0
-
-#stop the music
-execute if score #anniR_global anniR_spawned matches 0 run stopsound @a[distance=..128] record annihilation_recreated:annihilation_by_texilated
-execute if score #anniR_global anniR_spawned matches 0 run function annihilation:boss/play_music

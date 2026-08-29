@@ -38,11 +38,6 @@ execute if score #anniR_global anniR_onlyTrophy matches 1 run tellraw @p [{"colo
 execute if score #anniR_global anniR_onlyTrophy matches 0 run tellraw @p [{"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Annihilation will only drop the trophy"}]},"text":" - only trophy :        "},{"clickEvent":{"action":"run_command","value":"/function annihilation:admin/config/only_trophy_on"},"color":"red","text":"on  "},{"color":"green","text":"[off]"}]
 tellraw @s [{"text":" "}]
 
-#music
-execute if score #anniR_global anniR_music matches 1..2 run tellraw @p [{"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Annihilation music made by "},{"text":"Texilated","bold":true}]},"text":" - music :                "},{"color":"green","text":"[on]  "},{"clickEvent":{"action":"run_command","value":"/function annihilation:admin/config/music_off"},"color":"red","text":"off"}]
-execute if score #anniR_global anniR_music matches 0 run tellraw @p [{"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Annihilation music made by "},{"text":"Texilated","bold":true}]},"text":" - music :                "},{"clickEvent":{"action":"run_command","value":"/function annihilation:admin/config/music_on"},"color":"red","text":"on  "},{"color":"green","text":"[off]"}]
-tellraw @s [{"text":" "}]
-
 #auto team
 execute if score #anniR_global anniR_team matches 1 run tellraw @p [{"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"every entities summoned by annihilation will automatically join the team: "},{"text":"annihilation_team","bold":false}]},"text":" - auto-team :          "},{"color":"green","text":"[on]  "},{"clickEvent":{"action":"run_command","value":"/function annihilation:admin/config/team_off"},"color":"red","text":"off"}]
 execute if score #anniR_global anniR_team matches 0 run tellraw @p [{"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"every entities summoned by annihilation will automatically join the team: "},{"text":"annihilation_team","bold":false}]},"text":" - auto-team :          "},{"clickEvent":{"action":"run_command","value":"/function annihilation:admin/config/team_on"},"color":"red","text":"on  "},{"color":"green","text":"[off]"}]
