@@ -1,15 +1,5 @@
 scoreboard players set #anniR.global anniR.boss_summoner 0
 
-#msuic
-#playsound
-execute if score #anniR.global anniR.music matches 1 run playsound annihilation_recreated:annihilation_by_texilated record @a[distance=..90] ~ ~ ~ 10
-#credit
-execute if score #anniR.global anniR.music matches 1 run title @a[distance=..90] actionbar [{"text":"now playing ","color":"red"},{"text":"Annihilation","color":"dark_red"},{"text":" by ","color":"red"},{"text":"Texilated","color":"dark_red","underlined":true}]
-execute if score #anniR.global anniR.music matches 1 run schedule function annihilation:boss/music_credit 2.25s
-execute if score #anniR.global anniR.music matches 1 run schedule function annihilation:boss/play_music 290s
-#mark schedule
-execute if score #anniR.global anniR.music matches 1 run scoreboard players set #anniR.global anniR.music 2
-
 #summon
 function annihilation:admin/_/summon
 scoreboard players set @n[type=item_display,tag=aj.annihilation_recreated.root,distance=..4] anniR.struct_spawned 1

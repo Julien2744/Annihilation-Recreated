@@ -11,7 +11,7 @@ execute if score #anniR.global anniR.subjugate_beam matches 1 run execute as @n[
 execute if score #anniR.global anniR.subjugate_beam matches 1 run execute as @n[type=end_crystal,distance=..6,tag=anniR.immune,tag=anniR.regen] store result entity @s beam_target[2] double 1 run data get entity @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..90,limit=1] Pos[2]
 
 execute store result score #anniR.global anniR.checkMobGrief run gamerule mobGriefing
-execute if score #anniR.global anniR.checkMobGrief matches 1 run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:netherrack destroy
+execute if score #anniR.global anniR.checkMobGrief matches 1 run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:nether_bricks destroy
 execute if score #anniR.global anniR.checkMobGrief matches 1 run fill ~-1 ~3 ~-1 ~1 ~ ~1 minecraft:air destroy
 
 execute if score #anniR.global anniR.team matches 1 run team join annihilation_team @n[type=wither_skeleton,tag=anniR.immune,tag=anniR.summoned,distance=..2]

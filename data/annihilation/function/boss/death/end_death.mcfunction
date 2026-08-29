@@ -20,7 +20,3 @@ execute unless entity @e[type=item_display,tag=aj.annihilation_recreated.root,li
 execute if score #anniR.global anniR.spawned matches 0 run bossbar remove annihilation_bossbar
 execute if score #anniR.global anniR.spawned matches 0 run bossbar remove annihilation_newsun_comp
 execute if score #anniR.global anniR.spawned matches 0 run tag @e[tag=anniR.target,distance=..128,limit=1] remove anniR.target
-
-#stop the music
-execute if score #anniR.global anniR.spawned matches 0 run stopsound @a[distance=..128] record annihilation_recreated:annihilation_by_texilated
-execute if score #anniR.global anniR.spawned matches 0 run function annihilation:boss/play_music

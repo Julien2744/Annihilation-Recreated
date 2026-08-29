@@ -13,8 +13,6 @@ scoreboard objectives add anniR.00_loaded dummy
 scoreboard objectives add anniR.difficulty dummy
 #0: off ; 1: on
 scoreboard objectives add anniR.onlyTrophy dummy
-#0: off ; 1: on ; 2: music is playing
-scoreboard objectives add anniR.music dummy
 #0: off ; 1: on
 scoreboard objectives add anniR.team dummy
 scoreboard objectives add anniR.newsun_grief dummy
@@ -70,7 +68,6 @@ scoreboard players set #anniR.global anniR.boss_summoner 0
 #config
 scoreboard players set #anniR.global anniR.difficulty 0
 scoreboard players set #anniR.global anniR.onlyTrophy 0
-scoreboard players set #anniR.global anniR.music 1
 scoreboard players set #anniR.global anniR.team 0
 scoreboard players set #anniR.global anniR.newsun_kill 0
 scoreboard players set #anniR.global anniR.newsun_grief 0
@@ -91,4 +88,4 @@ scoreboard players set #anniR.load anniR.scoreboardVersion 8
 #end of initialisating
 scoreboard players set #anniR.load anniR.loadScoreboard 1
 
-say scoreboard finished
+#say scoreboard finished
