@@ -36,9 +36,6 @@ function annihilation:boss_summoner/summon
 playsound minecraft:item.trident.thunder hostile @a[distance=..128] ~ ~ ~ 12 0
 tellraw @a [{"text":"There were no players left to defeat ","color":"gray"},{"text":"Annihilation","color":"dark_red"},{"text":"...","color":"gray"}]
 
-execute at @a run stopsound @p record annihilation_recreated:annihilation_by_texilated
-schedule function annihilation:boss/play_music 3s
-
 #despawn anni
 data modify entity @e[type=magma_cube,nbt={NoAI:1b,Size:16},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest] Size set value 0
 kill @e[type=magma_cube,nbt={NoAI:1b,Size:0},tag=anni_hitbox,tag=anni_immune,distance=..8,limit=1,sort=nearest]

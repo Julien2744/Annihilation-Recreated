@@ -1,10 +1,11 @@
-fill 221 -39 -1284 207 -24 -1298 air destroy
-setblock 209 -39 -1284 minecraft:light
-setblock 207 -39 -1289 minecraft:light
-setblock 206 -39 -1296 minecraft:light
-setblock 208 -27 -1292 minecraft:light
-setblock 214 -39 -1300 minecraft:light
-setblock 215 -39 -1295 minecraft:light
-setblock 221 -39 -1295 minecraft:light
-setblock 217 -39 -1283 minecraft:light
-setblock 213 -39 -1288 minecraft:light
+fill 223 -43 -1305 209 -32 -1280 air destroy
+setblock 209 -43 -1288 minecraft:light[level=15]
+setblock 213 -43 -1291 minecraft:light[level=15]
+setblock 209 -43 -1293 minecraft:light[level=15]
+setblock 213 -43 -1296 minecraft:light[level=15]
+setblock 209 -43 -1298 minecraft:light[level=15]
+setblock 218 -43 -1302 minecraft:light[level=11]
+setblock 222 -43 -1297 minecraft:light[level=11]
+setblock 223 -43 -1292 minecraft:light[level=11]
+setblock 221 -43 -1286 minecraft:light[level=11]
+setblock 217 -43 -1283 minecraft:light[level=11]

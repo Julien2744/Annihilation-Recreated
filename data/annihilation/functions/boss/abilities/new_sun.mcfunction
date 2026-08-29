@@ -26,8 +26,8 @@ bossbar set annihilation_newsun_comp max 300
 bossbar set annihilation_newsun_comp value 0
 
 #infernal subjugate
-execute at @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..32,limit=1,sort=nearest] positioned ^-36 ^8 ^27 run function annihilation:boss/summons/infernal_subjugate
-execute at @e[type=item_display,tag=aj.annihilation_recreated.root,distance=..32,limit=1,sort=nearest] positioned ^34 ^3 ^27 run function annihilation:boss/summons/infernal_subjugate
+execute at @s positioned ^-25 ^6 ^13 run function annihilation:boss/summons/infernal_subjugate
+execute at @s positioned ^28 ^6 ^13 run function annihilation:boss/summons/infernal_subjugate
 
 #team
 execute if score #anniR_global anniR_team matches 1 run team join annihilation_team @e[type=magma_cube,tag=anni_immune,tag=new_sun_hitbox,tag=anni_summoned,distance=..16,limit=1]
